@@ -676,13 +676,617 @@
     .row.justify-content-center.mb-4(data-aos="fade-down")
       .col-lg-10
         figure
-              img(src="@/assets/curso/tema1-1-imagen.jpg", alt="ruta Bogotá – Medellín")
+          img(src="@/assets/curso/tema1-1-imagen.jpg", alt="ruta Bogotá – Medellín")
 
     .row.justify-content-center.mb-5
       .col-lg-8.tarjeta-borde-morada.p-4
         p.text-center.mb-0 En la imagen anterior se observa que en la ruta Bogotá – Medellín – Bogotá, el estatus de los cupos es HK, es decir, confirmado, en este ejemplo está HK1 porque la reserva es solo para 1 persona, Claudia Ávila, sin embargo, si fueran más, este número variará según el número de pasajeros. 
 
+    .row.mb-3
+      .col-lg-8.mb-4(data-aos="fade-right")
+        .row.tarjeta-borde-naranja.p-4.mb-3
+          .col-lg-2
+            img(src="@/assets/curso/tema1-1-icono1.svg", alt="Arribo desconocido ARNK (Arrival Unknown)")
+          .col-lg-10
+            h5 Arribo desconocido ARNK (Arrival Unknown)
+            p Este segmento indica que no se conoce la forma ni la fecha en que el pasajero se trasladó desde la ciudad de llegada del segmento previo hasta la ciudad de partida del segmento siguiente, podría ser que el pasajero se desplazó por sus propios medios auto, tren, bus, etc.
+            p.mb-0 El ejemplo más común es cuando el pasajero toma un tiquete Bogotá-Miami/Orlando-Bogotá, en este ejemplo hay un ARNK ya que en la mayoría de los casos las personas alquilan coche para llegar de Miami a Orlando y tomar el vuelo de regreso.
+        .row.tarjeta-borde-naranja.p-4
+          .col-lg-2
+            img(src="@/assets/curso/tema1-1-icono2.svg", alt="Arribo conocido")
+          .col-lg-10
+            h5 Arribo conocido
+            p.mb-0 Son los vuelos que forman parte del itinerario, pero no han sido reservados a través de Amadeus razón por la cual se ingresará al sistema como un elemento OSI. 
+      .col-lg-4.mb-4(data-aos="fade-left")
+        img(src="@/assets/curso/tema1-1-imagen1.png", alt="Imagen decorativa")
 
+    p.mb-4(data-aos="fade") Estos segmentos de información no son obligatorios, pero aseguran que el PNR contenga la mayor cantidad de detalles sobre el itinerario del pasajero, como los que se muestran a continuación:
+
+    TabsC.color-acento-contenido.mb-5(data-aos="fade-down")
+      .py-3.py-md-4.px-lg-5(titulo="Tiempo límite de la reserva")
+        h5 Tiempo límite de la reserva
+        p.mb-4 Hace referencia al tiempo máximo que tiene la reserva para comprar el tiquete, puede ser: TL (tiempo límite); XL (cancelación automática), OK (pagado), como se ejemplifica a continuación:
+        .row.justify-content-center.mb-4(data-aos="fade-down")
+          .col-lg-9
+            .tabla-a.color-acento-contenido.mb-4
+              table
+                thead
+                  tr.p-0.m-0
+                    th.p-0.m-0
+                    th.p-0.m-0 
+                tbody
+                  tr
+                    td.text-center Código mandatorio+indicador+fecha
+                    td.text-center 
+                      strong TKTL
+                      | 16DEC
+                  tr
+                    td.text-center Código mandatorio indicador (billete pago)
+                    td.text-center 
+                      strong TKOK
+      .py-3.py-md-4.px-lg-5(titulo="Contacto de referencia")
+        h5 Contacto de referencia
+        p.mb-4 En este campo se referencia el nombre de la persona que ha solicitado la creación, modificación o cancelación de una reserva. La constante es RF aparece en la parte activa de la reserva así:
+        .row.justify-content-center.mb-4(data-aos="fade-down")
+          .col-lg-9
+            .tabla-a.color-acento-contenido.mb-4
+              table
+                thead
+                  tr.p-0.m-0
+                    th.p-0.m-0
+                    th.p-0.m-0 
+                tbody
+                  tr
+                    td.text-center Código mandatorio + nombre quien hace la reserva o alguna modificación
+                    td.text-center 
+                      strong RF
+                      | ClaudiaA
+      .py-3.py-md-4.px-lg-5(titulo="Otros campos en el PNR")
+        h5 Otros campos en el PNR
+        p.mb-4 Estos campos son para agregar notas o información relevante a la reserva, se puede colocar de dos maneras:
+        ul.lista-ul--color.lista-circulo.px-lg-4
+          li
+            i.fas.fa-circle
+            p
+              strong OSI: 
+              | son notas que se envían a una línea aérea específica o a todas las compañías presentes en el itinerario. La información transmitida no requiere respuesta o acción por parte de las líneas aéreas, es más una información importante de carácter informativo. La constante es 
+              strong OS
+              |, el código de una línea aérea específica o YY (en caso de que la información se quiera enviar a todas las aerolíneas reservadas en el PNR) más el mensaje que se requiera transmitir.
+          li
+            i.fas.fa-circle
+            p
+              strong REMARK: 
+              | son notas que se envían para uso interno, estas solo las pueden visualizar las líneas aéreas que manejen Amadeus como sistema de reservas “System Users”. La constante es 
+              strong RM 
+              | seguido del mensaje a transmitir.
+        .row.justify-content-center.mb-4(data-aos="fade-down")
+          .col-lg-9
+            .tabla-a.color-acento-contenido.mb-4
+              table
+                thead
+                  tr.p-0.m-0
+                    th.p-0.m-0
+                    th.p-0.m-0 
+                tbody
+                  tr
+                    td.text-center 
+                      strong OS 
+                      | + mensaje
+                    td.text-center 
+                      strong OS 
+                      | PAX VIP MIEMBRO JUNTA DIRECTIVA  
+                  tr
+                    td.text-center 
+                      strong RM 
+                      | + mensaje
+                    td.text-center 
+                      strong RM 
+                      | PAX SS MAXIMA COLABORACION ADT MAYOR                  
+             
+    p.mb-4(data-aos="fade") Ejemplo de cómo se ve una reserva ya creada en Amadeus:
+                      
+    .row.justify-content-center.mb-5(data-aos="fade-down")
+      .col-lg-9
+        .tabla-a.color-acento-contenido
+          table
+            thead.amarillo
+              tr
+                th.py-3.casilla1
+                  h3.mb-0 Información en la imagen
+                th.py-3
+                  h3.mb-0 Explicación
+            tbody
+              tr
+                td
+                  strong 1. RP/BOGXX0000/BOGXX0000
+                td Código de la oficina u office ID donde se creó la reserva.
+              tr
+                td
+                  strong 2. 0C/GS
+                td Código de la firma o usuario que creó la reserva.
+              tr
+                td
+                  strong 3.16JUN21/2357Z
+                td Fecha y hora en la que se creó la reserva, aparece con una Z al final de la hora, ya que es hora zulú, para la hora colombiana se resta 5 horas de este horario y esa es la hora que quedó realizada. 
+              tr
+                td
+                  strong 4. 36VM65
+                td Código de reserva, récord localizador o PNR.
+              tr
+                td
+                  strong 5. AVILA/CLAUDIA
+                td Apellidos y nombres del pasajero.
+              tr
+                td
+                  strong 6. AV8426
+                td Aerolínea y número de vuelo del vuelo de ida.
+              tr
+                td
+                  strong 7. S
+                td Clase en la que se reservó el cupo.
+              tr
+                td
+                  strong 8. 15JUL
+                td Fecha de viaje del segmento de IDA.
+              tr
+                td
+                  strong 9. 4
+                td Día de la semana en número (jueves).
+              tr
+                td
+                  strong 10. BOGMDE
+                td Hace referencia a la ruta de ese trayecto, en este caso Bogotá-Medellín.
+              tr
+                td
+                  strong 11. HK1
+                td Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
+              tr
+                td
+                  strong 12. 0500
+                td Hora de salida del vuelo.
+              tr
+                td
+                  strong 13. 0603
+                td Hora de llegada del vuelo a destino (HORA LOCAL).
+              tr
+                td
+                  strong 14. AV8435
+                td Aerolínea y número de vuelo del vuelo de regreso.
+              tr
+                td
+                  strong 15. S
+                td Clase en la que se reservó el cupo.
+              tr
+                td
+                  strong 16. 20JUL
+                td Fecha de viaje del segmento de REGRESO.
+              tr
+                td
+                  strong 17. 2
+                td Día de la semana en número (martes).
+              tr
+                td
+                  strong 18. MDEBOG
+                td Hace referencia a la ruta de ese trayecto, en este caso Medellín-Bogotá.
+              tr
+                td
+                  strong 19. HK1
+                td Hace referencia a la ruta de ese trayecto, en este caso Medellín-Bogotá.
+              tr
+                td
+                  strong 20. 0618
+                td Hora de salida del vuelo.
+              tr
+                td
+                  strong 21. 0710
+                td Hora de llegada del vuelo a destino.
+              tr
+                td
+                  strong 22. AP H8077894-H
+                td Contacto de casa del pasajero.
+              tr
+                td
+                  strong 23. 3123000001-M
+                td Contacto móvil del pasajero.
+              tr
+                td
+                  strong 24.TKOK16JUN/BOGXX0000//ETAV
+                td Tiempo límite de la reserva, en este caso TKOK porque el cliente va a hacer la compra del tiquete.
+              tr
+                td
+                  strong 25. SSR WCHR AV HK1/S2
+                td Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta BOGMDE.
+              tr
+                td
+                  strong 26. SSR WCHR AV HK1/S3
+                td Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta MDEBOG.
+              tr
+                td
+                  strong 27. FE PAX /C1-2 NONREFUNDABLE/ CHANGESNOT PERMITTED /NO ENDORSE/S2-3
+                td Endosos del tiquete con algunas restricciones de la tarifa C1-2: cupón 1-2 NO REFUNDABLE (no reembolsable) /CHANGESNOTPERMITED (cambios no permitidos)/ NOENDORSE (no endosable)
+              tr
+                td
+                  strong 28. 1-11
+                td Líneas de información de la reserva.            
+
+      Separador        
+
+
+    // 1.2
+    #t_1_2.titulo-segundo(data-aos="fade-right")
+      .h2 1.2.	Solicitud de servicios especiales
+
+    .row.justify-content-center.mb-5(data-aos="fade-down")
+      .col-lg-10
+        .bloque-texto-a.color-acento-contenido.p-4 
+          .row.m-0.align-items-center.justify-content-between
+            .col-lg-8.mb-4.mb-lg-0
+              .bloque-texto-a__texto.p-4
+                p Las compañías aéreas ofrecen a los pasajeros opciones de servicios especiales que hacen el viaje más fácil o placentero para ellos, o simplemente requieren asistencia de algún modo. Se puede utilizar para alguna comida especial, asistencia en silla de ruedas, transporte de mascotas tanto en cabina como en bodega, etc.
+            .col-lg-4
+              img(src="@/assets/curso/tema1-2-imagen.svg", alt="Imagen decorativa")
+  
+    p.mb-4(data-aos="fade") Existen gran variedad de servicios, dentro de los más solicitados tenemos:   
+
+    .row.justify-content-center.mb-4(data-aos="fade-down")
+      .col-lg-9
+        .tabla-a.color-acento-contenido
+          table
+            thead.amarillo.text-center
+              tr
+                th.py-3
+                  h3.mb-0 (SSR) Servicios especiales
+                th.py-3
+                  h3.mb-0 Código del servicio
+            tbody.text-center
+              tr
+                td Pasajero invidente
+                td
+                  strong BLND
+              tr
+                td Equipaje frágil
+                td
+                  strong FRAG
+              tr
+                td Silla de ruedas
+                td
+                  strong WCHC
+              tr
+                td Comida diabéticos
+                td
+                  strong DBML
+              tr
+                td Comida vegetariana
+                td
+                  strong VGML
+              tr
+                td Comida baja en colesterol
+                td
+                  strong LOCH
+              tr
+                td Comida baja en Calorías
+                td
+                  strong LCAL                        
+
+    .row.justify-content-center.mb-4(data-aos="fade-down")
+      .col-lg-9
+        .tabla-a.color-acento-contenido.mb-4
+          table
+            thead
+              tr.p-0.m-0
+                th.p-0.m-0
+                th.p-0.m-0 
+            tbody
+              tr
+                td.text-center Servicio especial
+                td.text-center 
+                  strong SR+ 
+                  | Código del servicio/ # de pasajero
+              tr
+                td.text-center DBML (comida diabética)
+                td.text-center 
+                  strong SR DBML/P1
+              tr
+                td.text-center Explicación
+                td.text-center Solicitando comida para diabéticos.    
+
+    .row.justify-content-center.mb-5
+      .col-lg-8.tarjeta-borde-morada.p-4
+        p.text-center.mb-0 En este ejemplo, la línea 7 – 8 indica que este pasajero solicitó una silla de ruedas hasta la puerta del avión, tanto para el vuelo BOGOTÁ-MEDELLÍN como para el regreso MEDELLÍN-BOGOTÁ. 
+
+    .row.justify-content-center
+      .col-lg-10
+        figure(data-aos="fade")
+          img(src="@/assets/curso/tema1-2-figura.jpg", alt="Pantallazo amadeus")
+
+    Separador  
+
+
+    // 1.3
+    #t_1_3.titulo-segundo(data-aos="fade-right")
+      .h2 1.3.	Modificaciones y Cancelaciones
+
+    .row.justify-content-center
+      .col-lg-10
+        .bloque-texto-a.color-naranja.p-4.p-md-5.mb-5 
+          .row.m-0.align-items-center.justify-content-between
+            .col-lg-5.mb-4.mb-lg-0
+              h4.mb-0 Dentro de las opciones que muestra Amadeus, se tiene la posibilidad de modificar información dentro de una reserva de acuerdo con solicitud del cliente, por ello se puede modificar:
+            .col-lg-7
+              .bloque-texto-a__texto.p-4
+                ul.lista-ul--color.lista-circulo.mb-0
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Itinerario (ruta, hora, fecha).
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Datos de contacto.
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Notas dentro de la reserva.
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Clase en la que se reserva o si es en la cabina del avión.
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Nombre de pasajero.
+
+    p.mb-4(data-aos="fade") Para esto se debe ingresar la siguiente entrada dependiendo de la modificación:
+
+    .row.justify-content-center.mb-5(data-aos="fade-down")
+      .col-lg-9
+        .tabla-a.color-acento-contenido
+          table
+            thead.amarillo.text-center
+              tr
+                th.py-3
+                  h3.mb-0 Entrada de modificación
+                th.py-3
+                  h3.mb-0 Respuesta del sistema
+            tbody.text-center
+              tr
+                td 
+                  strong 5 (línea en la reserva) /OK
+                td
+                  strong Cambio el estatus a OK.
+              tr
+                td 
+                  strong 4 (línea en la reserva) BOG 2238464-H
+                td
+                  strong Cambia el contacto en la reserva.
+              tr
+                td 
+                  strong 1/1AVILARAMIREZ/CLAUDIAMARCELA
+                td
+                  strong Cambia el nombre en la reserva.       
+
+    p.mb-4(data-aos="fade") Después de realizar cualquier modificación dentro de la reserva, se debe ingresar el elemento 
+      strong recibido 
+      | de 
+      strong RF 
+      | indicando el nombre de la persona que ha solicitado la modificación, antes de dar el fin de transacción ET o ER. 
+
+
+    .row.justify-content-center
+      .col-lg-10
+        .bloque-texto-a.color-naranja.p-4.p-md-5.mb-5 
+          .row.m-0.align-items-center.justify-content-between
+            .col-lg-5.mb-4.mb-lg-0
+              h4.mb-0 Para la cancelación de un elemento de la reserva solo se utiliza la entrada XE seguida del número de la línea a eliminar del PNR.
+            .col-lg-7
+              .bloque-texto-a__texto.p-4
+                ul.lista-ul--color.lista-circulo.mb-0
+                  li.mb-0
+                    i.fas.fa-circle
+                    p.mb-0
+                      strong XE4: 
+                      | Elimina la línea 4 de la reserva.
+                  li.mb-0
+                    i.fas.fa-circle
+                    p.mb-0
+                      strong X1-4: 
+                      | Elimina desde el elemento 1 al 4.
+                  li.mb-0
+                    i.fas.fa-circle
+                    p.mb-0
+                      strong X2;4: 
+                      | Elimina el elemento 2 y el 4.
+    
+    p.mb-4(data-aos="fade")  En este ejemplo, se realiza un cambio en el contacto de la línea 4.
+
+    .row.justify-content-center.mb-5
+      .col-lg-10
+        figure(data-aos="fade")
+          img(src="@/assets/curso/tema1-3-figura.jpg", alt="Pantallazo amadeus")
+
+    p.mb-4(data-aos="fade") 
+      strong ENTRADA: 4/BOG8113930-H
+
+    .row.justify-content-center
+      .col-lg-10
+        figure(data-aos="fade")
+          img(src="@/assets/curso/tema1-3-figura2.jpg", alt="Pantallazo amadeus")
+
+    Separador
+
+
+    // 1.4
+    #t_1_4.titulo-segundo(data-aos="fade-right")
+      .h2 1.4.	Historial de un PNR (Passenger Name Record)
+
+    .row.justify-content-center
+      .col-lg-10
+        .bloque-texto-a.color-naranja.p-4.p-md-5.mb-5 
+          .row.m-0.align-items-center.justify-content-between
+            .col-lg-5.mb-4.mb-lg-0
+              h4.mb-0 Cada código de reserva lleva un histórico de su información, el registro desde la creación de la misma y de las modificaciones y cancelaciones que se hayan realizado. 
+            .col-lg-7
+              .bloque-texto-a__texto.p-4
+                p En la historia del PNR el sistema registra lo siguiente:
+                ul.lista-ul--color.lista-circulo.mb-0
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Las transacciones realizadas por los agentes desde su inicio.
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Las transacciones de los proveedores, si aplica.
+                  li.mb-0
+                    i.fas.fa-circle
+                    | Las transacciones manuales, automáticas de colas y emisión de documentos.
+
+
+    p.mb-4(data-aos="fade") Cada vez que un PNR es modificado, la línea de encabezamiento muestra la fecha y la hora Z (GMT) en que la modificación fue realizada.
+
+    p.mb-4(data-aos="fade") La entrada para visualizar la historia de reserva es: 
+      strong RH
+      | , el sistema responde con una serie de información que se lee de la siguiente manera:
+
+    .row.justify-content-center
+      .col-lg-10
+        ul.lista-ul--color.lista-circulo
+          li
+            i.fas.fa-circle
+            | En la primera línea aparece la información como en la pantalla principal de la reserva.
+          li
+            i.fas.fa-circle
+            | Cada transacción dentro de la reserva está numerada, el número de cada elemento indica: cuándo se realizó la actividad y reciben el nombre de actualización: 000 si fueron efectuadas en el momento de la creación de la reserva original, 001 después de la primera recuperación del PNR 002 después de la segunda recuperación, y así sucesivamente.
+          li
+            i.fas.fa-circle
+            strong ON
+            |, es el código que indica los nombres originales ingresados en la reserva.
+          li
+            i.fas.fa-circle
+            strong OS
+            |, código asignado a los segmentos de vuelo ingresados originalmente en la reserva.
+          li
+            i.fas.fa-circle
+            strong SA
+            |, código de elementos adicionados.
+          li
+            i.fas.fa-circle
+            strong SX
+            |, código de elementos cancelados. 
+          li.mb-4
+            i.fas.fa-circle
+            | Otros códigos para entender la historia de una reserva son los siguientes:
+
+    .row.justify-content-center.mb-5(data-aos="fade-down")
+      .col-lg-9
+        .tabla-a.color-acento-contenido
+          table
+            thead.amarillo.text-center
+              tr
+                th.py-3.casilla1
+                  h3.mb-0 Entrada
+                th.py-3
+                  h3.mb-0 Respuesta del sistema
+            tbody.text-center
+              tr
+                td 
+                  strong RH
+                td
+                  strong Historia de la reserva sin la información de Queues.
+              tr
+                td 
+                  strong RH/ALL
+                td
+                  strong Historia de la reserva completa.
+              tr
+                td 
+                  strong RHQ
+                td
+                  strong Historial de Queues en la reserva.  
+              tr
+                td 
+                  strong RT
+                td
+                  p
+                    strong Parte que está activa en ese código de reserva / refrescar o regresar a reserva.
+                  p.mb-0
+                    strong Abrir un código de reserva, la constante RT seguido del código de reserva para poder desplegarla. 
+              tr
+                td 
+                  strong RHA
+                td
+                  strong Historial de reserva que despliega solo los segmentos aéreos. 
+              tr
+                td 
+                  strong RHG
+                td
+                  strong Historial de reserva con referencia a las notas OSI y los servicios SSR. 
+              tr
+                td 
+                  strong RHN
+                td
+                  strong Historial de los nombres de los pasajeros.
+              tr
+                td 
+                  strong RHK
+                td
+                  strong Historial de reserva de los elementos 
+                  italic-strong e-ticket.     
+              tr
+                td 
+                  strong RHJ
+                td
+                  strong Historial de reserva de los elementos de contacto.     
+              tr
+                td 
+                  strong RHR
+                td
+                  strong Historial de reserva de los elementos de notas RM y RC.     
+              tr
+                td 
+                  strong RHC
+                td
+                  strong Historial de reserva de los elementos de alquiler de auto.     
+              tr
+                td 
+                  strong RHH
+                td
+                  strong Historial de reserva de los elementos de reservas hoteleras.     
+              tr
+                td 
+                  strong RHX
+                td
+                  strong Historial de reserva de los elementos de renta de carro y reservas hoteleras.       
+              tr
+                td 
+                  strong RHF
+                td
+                  strong Historial de reserva de los elementos de tarifa.  
+              tr
+                td 
+                  strong RH005
+                td
+                  strong Visualizar la historia a partir de esa actualización.                                         
+
+    
+    p.mb-4(data-aos="fade") Ejemplo de historia de reserva:
+
+    .row.justify-content-center.mb-4
+      .col-lg-10
+        figure(data-aos="fade")
+          img(src="@/assets/curso/tema1-4-figura.jpg", alt="Pantallazo amadeus")
+
+    .row.justify-content-center(data-aos="fade-down")
+      .col-lg-10
+        .tarjeta.color-degrade.p-3
+          .row.justify-content-around.align-items-center
+            .col-1
+            .col-3.col-sm-3.col-lg-2
+              img.px-lg-3(src="@/assets/curso/tema1-4-cta.svg")
+            .col
+              .row.justify-content-between.align-items-center
+                .col.mb-3.mb-sm-0
+                  h3.mb-1 Video inicio - Reserva
+                  p.text-small.mb-0 A manera de explicación sobre la plataforma Amadeus, se  
+                    br
+                    | presenta el siguiente video; se recomienda su descarga.
+                .col-sm-auto.px-lg-4
+                  a.boton.color-acento-botones.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                    span Descargar
+                    i.fas.fa-file-download
 
 </template>
 
