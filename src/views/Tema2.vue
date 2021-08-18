@@ -378,7 +378,10 @@
     
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-10
-        .tarjeta.color-degrade.p-3
+        figure.mb-5
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        //-.tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
             .col-3.col-sm-3.col-lg-2
@@ -479,8 +482,8 @@
     p.mb-4(data-aos="fade") Ejemplo de cotización de un itinerario, solicitando al sistema que traiga la tarifa más baja disponible:
 
     .row.mb-5.justify-content-md-center
-      .container.col-lg-11.col-12
-        .lg-container
+      .container.lg-hotspot4.col-lg-11.col-12
+        .lg-container.lg-hotspot4
           figure
             img.lg-image(src="@/assets/curso/tema2-3-hotspot.jpg", alt="Ejemplo de cotización de un itinerario")
           .lg-hotspot.lg-hotspot--2.lg-mobile1-1(style="top: 26%; left: 26.5%;")  
@@ -692,7 +695,10 @@
 
     .row.justify-content-center(data-aos="fade-down")
       .col-lg-10
-        .tarjeta.color-degrade.p-3
+        figure
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        //- .tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
             .col-3.col-sm-3.col-lg-2
@@ -768,7 +774,10 @@
 
     .row.justify-content-center.mb-4(data-aos="fade-down")
       .col-lg-10
-        .tarjeta.color-degrade.p-3
+        figure.mb-4
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        //-.tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
             .col-3.col-sm-3.col-lg-2
@@ -787,7 +796,10 @@
 
     .row.justify-content-center(data-aos="fade-down")
       .col-lg-10
-        .tarjeta.color-degrade.p-3
+        figure
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        //- .tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
             .col-3.col-sm-3.col-lg-2
@@ -1056,7 +1068,14 @@ $colorText: #333
   height: 48px
   width: 321px
 
-
+/* PC LARGE */
+@media (min-width: 721px)
+  .container.lg-hotspot4
+    width: 978px
+  .lg-hotspot4 .lg-image
+    width: 955px
+  .lg-container.lg-hotspot4
+    width: 955px
 /* Mobile */
 @media (max-width: 720px)
 

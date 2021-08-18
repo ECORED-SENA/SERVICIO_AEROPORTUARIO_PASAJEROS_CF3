@@ -55,8 +55,8 @@
     p.mb-4(data-aos="fade") Al ingresar al sistema encontrará la pantalla de inicio así:
 
     .row.mb-5.justify-content-md-center
-      .container.col-lg-11.col-12
-        .lg-container
+      .container.lg-hotspot1.col-lg-11.col-12
+        .lg-container.lg-hotspot1
           figure
             img.lg-image(src="@/assets/curso/tema1-hotspot.jpg", alt="Ingreso Amadeus")
           .lg-hotspot.lg-hotspot--2.lg-mobile1-1(style="top: 7.5%; left: 16.5%;")  
@@ -635,8 +635,8 @@
         
 
         .row.mb-5.justify-content-md-center
-          .container.col-lg-11.col-12
-            .lg-container
+          .container.lg-hotspot2.col-lg-11.col-12
+            .lg-container.lg-hotspot2
               figure
                 img.lg-image(src="@/assets/curso/tema1-1-hotspot.jpg", alt="Información en el despliegue de una disponibilidad")
               .lg-hotspot.lg-hotspot--2.lg-mobile2-1(style="top: 23%; left: 27%;")  
@@ -1076,179 +1076,179 @@
     p.mb-4(data-aos="fade") Ejemplo de cómo se ve una reserva ya creada en Amadeus:
 
     .row.mb-5.justify-content-md-center
-          .container.col-lg-11.col-12
-            .lg-container
-              figure
-                img.lg-image(src="@/assets/curso/tema1-1-hotspot2.jpg", alt="Ejemplo de cómo se ve una reserva ya creada en Amadeus")
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-1(style="top: 35%; left: 26%;")  
-                .lg-hotspot__button(@mouseover="mostrarIndicador = false")
-                  .indicador--click(v-if="mostrarIndicador")
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 1. RP/BOGXX0000/BOGXX0000
-                  p Código de la oficina u office ID donde se creó la reserva.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-2(style="top: 35%; left: 57.5%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 2. 0C/GS
-                  p Código de la firma o usuario que creó la reserva.  
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-3(style="top: 35%; left: 64%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 3. 16JUN21/2357Z
-                  p Fecha y hora en la que se creó la reserva, aparece con una Z al final de la hora, ya que es hora zulú, para la hora colombiana se resta 5 horas de este horario y esa es la hora que quedó realizada.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-4(style="top: 35%; left: 79.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 4. 36VM65
-                  p Código de reserva, récord localizador o PNR. 
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-5(style="top: 39.3%; left: 30%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 5. AVILA/CLAUDIA
-                  p Apellidos y nombres del pasajero.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-6(style="top: 43.3%; left: 30.5%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 6. AV8426
-                  p Aerolínea y número de vuelo del vuelo de ida.  
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-7(style="top: 43.3%; left: 37.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 7. S
-                  p Clase en la que se reservó el cupo.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-8(style="top: 43.3%; left: 39.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 8. 15JUL
-                  p Fecha de viaje del segmento de IDA.      
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-9(style="top: 43.3%; left: 44.7%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 9. 4
-                  p Día de la semana en número (jueves).        
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-10(style="top: 43.3%; left: 46.6%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 10. BOGMDE
-                  p Hace referencia a la ruta de ese trayecto, en este caso Bogotá-Medellín.             
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-11(style="top: 43.3%; left: 53%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 11. HK1
-                  p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-12(style="top: 43.3%; left: 65.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 12. 0500
-                  p Hora de salida del vuelo.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-13(style="top: 43.3%; left: 69.9%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 13. 0603
-                  p Hora de llegada del vuelo a destino (HORA LOCAL).        
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-14(style="top: 47.4%; left: 30.5%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 14. AV8435
-                  p Aerolínea y número de vuelo del vuelo de regreso.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-15(style="top: 47.4%; left: 37.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 15. S
-                  p Clase en la que se reservó el cupo.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-16(style="top: 47.4%; left: 39.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 16. 20JUL
-                  p Fecha de viaje del segmento de REGRESO.     
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-17(style="top: 47.4%; left: 44.7%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 17. 2
-                  p Día de la semana en número (martes).      
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-18(style="top: 47.4%; left: 46.6%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 18. MDEBOG
-                  p Hace referencia a la ruta de ese trayecto, en este caso Medellín-Bogotá.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-19(style="top: 47.4%; left: 53%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 19. HK1
-                  p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-20(style="top: 47.4%; left: 65.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 20. 0618
-                  p Hora de salida del vuelo.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-21(style="top: 47.4%; left: 69.9%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 21. 0710
-                  p Hora de llegada del vuelo a destino.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-22(style="top: 51.8%; left: 29.8%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 22. AP H8077894-H
-                  p Contacto de casa del pasajero.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-23(style="top: 55.9%; left: 32.8%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 23. 3123000001-M
-                  p Contacto móvil del pasajero.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-24(style="top: 60.1%; left: 29.8%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 24.TKOK16JUN/BOGXX0000//ETAV
-                  p Tiempo límite de la reserva, en este caso TKOK porque el cliente va a hacer la compra del tiquete.           
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-25(style="top: 64.4%; left: 29.8%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 25. SSR WCHR AV HK1/S2
-                  p Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta BOGMDE.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-26(style="top: 68.5%; left: 29.8%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 26. SSR WCHR AV HK1/S3
-                  p Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta MDEBOG.
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-27(style="top: 77.1%; left: 29.8%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 27. FE PAX /C1-2 NONREFUNDABLE/ CHANGESNOT PERMITTED /NO ENDORSE/S2-3
-                  p Endosos del tiquete con algunas restricciones de la tarifa C1-2: cupón 1-2 NO REFUNDABLE (no reembolsable) /CHANGESNOTPERMITED (cambios no permitidos)/ NOENDORSE (no endosable)
-              .lg-hotspot.lg-hotspot--2.lg-mobile3-28(style="top: 39.3%; left: 27.2%;")  
-                .lg-hotspot__button
-                .lg-hotspot__label.p-4
-                  h4 
-                    strong 28. 1-11
-                  p Líneas de información de la reserva.
+      .container.lg-hotspot3.col-lg-11.col-12
+        .lg-container.lg-hotspot3
+          figure
+            img.lg-image(src="@/assets/curso/tema1-1-hotspot2.jpg", alt="Ejemplo de cómo se ve una reserva ya creada en Amadeus")
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-1(style="top: 35%; left: 26%;")  
+            .lg-hotspot__button(@mouseover="mostrarIndicador = false")
+              .indicador--click(v-if="mostrarIndicador")
+            .lg-hotspot__label.p-4
+              h4 
+                strong 1. RP/BOGXX0000/BOGXX0000
+              p Código de la oficina u office ID donde se creó la reserva.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-2(style="top: 35%; left: 57.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 2. 0C/GS
+              p Código de la firma o usuario que creó la reserva.  
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-3(style="top: 35%; left: 64%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 3. 16JUN21/2357Z
+              p Fecha y hora en la que se creó la reserva, aparece con una Z al final de la hora, ya que es hora zulú, para la hora colombiana se resta 5 horas de este horario y esa es la hora que quedó realizada.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-4(style="top: 35%; left: 79.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 4. 36VM65
+              p Código de reserva, récord localizador o PNR. 
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-5(style="top: 39.3%; left: 30%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 5. AVILA/CLAUDIA
+              p Apellidos y nombres del pasajero.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-6(style="top: 43.3%; left: 30.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 6. AV8426
+              p Aerolínea y número de vuelo del vuelo de ida.  
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-7(style="top: 43.3%; left: 37.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 7. S
+              p Clase en la que se reservó el cupo.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-8(style="top: 43.3%; left: 39.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 8. 15JUL
+              p Fecha de viaje del segmento de IDA.      
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-9(style="top: 43.3%; left: 44.7%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 9. 4
+              p Día de la semana en número (jueves).        
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-10(style="top: 43.3%; left: 46.6%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 10. BOGMDE
+              p Hace referencia a la ruta de ese trayecto, en este caso Bogotá-Medellín.             
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-11(style="top: 43.3%; left: 53%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 11. HK1
+              p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-12(style="top: 43.3%; left: 65.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 12. 0500
+              p Hora de salida del vuelo.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-13(style="top: 43.3%; left: 69.9%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 13. 0603
+              p Hora de llegada del vuelo a destino (HORA LOCAL).        
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-14(style="top: 47.4%; left: 30.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 14. AV8435
+              p Aerolínea y número de vuelo del vuelo de regreso.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-15(style="top: 47.4%; left: 37.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 15. S
+              p Clase en la que se reservó el cupo.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-16(style="top: 47.4%; left: 39.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 16. 20JUL
+              p Fecha de viaje del segmento de REGRESO.     
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-17(style="top: 47.4%; left: 44.7%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 17. 2
+              p Día de la semana en número (martes).      
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-18(style="top: 47.4%; left: 46.6%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 18. MDEBOG
+              p Hace referencia a la ruta de ese trayecto, en este caso Medellín-Bogotá.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-19(style="top: 47.4%; left: 53%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 19. HK1
+              p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-20(style="top: 47.4%; left: 65.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 20. 0618
+              p Hora de salida del vuelo.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-21(style="top: 47.4%; left: 69.9%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 21. 0710
+              p Hora de llegada del vuelo a destino.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-22(style="top: 51.8%; left: 29.8%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 22. AP H8077894-H
+              p Contacto de casa del pasajero.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-23(style="top: 55.9%; left: 32.8%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 23. 3123000001-M
+              p Contacto móvil del pasajero.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-24(style="top: 60.1%; left: 29.8%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 24.TKOK16JUN/BOGXX0000//ETAV
+              p Tiempo límite de la reserva, en este caso TKOK porque el cliente va a hacer la compra del tiquete.           
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-25(style="top: 64.4%; left: 29.8%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 25. SSR WCHR AV HK1/S2
+              p Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta BOGMDE.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-26(style="top: 68.5%; left: 29.8%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 26. SSR WCHR AV HK1/S3
+              p Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta MDEBOG.
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-27(style="top: 77.1%; left: 29.8%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 27. FE PAX /C1-2 NONREFUNDABLE/ CHANGESNOT PERMITTED /NO ENDORSE/S2-3
+              p Endosos del tiquete con algunas restricciones de la tarifa C1-2: cupón 1-2 NO REFUNDABLE (no reembolsable) /CHANGESNOTPERMITED (cambios no permitidos)/ NOENDORSE (no endosable)
+          .lg-hotspot.lg-hotspot--2.lg-mobile3-28(style="top: 39.3%; left: 27.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 28. 1-11
+              p Líneas de información de la reserva.
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-9
@@ -1736,7 +1736,10 @@
 
     .row.justify-content-center(data-aos="fade-down")
       .col-lg-10
-        .tarjeta.color-degrade.p-3
+        figure.mb-3
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        //-.tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
             .col-3.col-sm-3.col-lg-2
@@ -2058,8 +2061,27 @@ $colorText: #333
   width: 23px
 
 
-
-/* Mobile */
+/* PC LARGE */
+@media (min-width: 721px)
+  .container.lg-hotspot1
+    width: 978px
+  .lg-hotspot1 .lg-image
+    width: 955px
+  .lg-container.lg-hotspot1
+    width: 955px
+  .container.lg-hotspot2
+    width: 815px
+  .lg-hotspot2 .lg-image
+    width: 792px
+  .lg-container.lg-hotspot2
+    width: 792px
+  .container.lg-hotspot3
+    width: 978px
+  .lg-hotspot3 .lg-image
+    width: 955px
+  .lg-container.lg-hotspot3
+    width: 955px
+/* MOBILE */
 @media (max-width: 720px)
 
   .lg-hotspot__button
