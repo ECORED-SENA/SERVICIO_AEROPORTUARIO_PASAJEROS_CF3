@@ -54,7 +54,197 @@
 
     p.mb-4(data-aos="fade") Al ingresar al sistema encontrará la pantalla de inicio así:
 
-    
+    .row.mb-5.justify-content-md-center
+      .container.col-lg-11.col-12
+        .lg-container
+          figure
+            img.lg-image(src="@/assets/curso/tema1-hotspot.jpg", alt="Ingreso Amadeus")
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-1(style="top: 7.5%; left: 16.5%;")  
+            .lg-hotspot__button(@mouseover="mostrarIndicador = false")
+              .indicador--click(v-if="mostrarIndicador")
+            .lg-hotspot__label.p-4
+              h4 
+                strong 1. 
+                italic-strong Search 
+                strong PNR
+              p En esta opción se puede buscar un código de reserva.
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-2(style="top: 7.5%; left: 50.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 2. 
+                italic-strong Retrieve 
+              p Este botón trae la información de la reserva luego de haberlo digitado en el recuadro amarillo. 
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-3(style="top: 7.5%; left: 81.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 3 .00000C
+              p Firma del usuario activo en esta pantalla de 
+                strong Amadeus.
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-4(style="top: 7.5%; left: 86%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 4. 
+                italic-strong Office ID: 
+                strong BOGXX0000 
+              p Código de la oficina en la que se está trabajando.
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-5(style="top: 7.5%; left: 97.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 5. 
+                italic-strong Logout 
+              p Salir de 
+                strong Amadeus 
+                | de forma segura.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-6(style="top: 7.5%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 6. 
+                italic-strong Create NewPNR 
+              p Crear reserva con un flujo ya estipulado por el sistema.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-7(style="top: 13.2%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 7. 
+                italic-strong Create New 
+              p En este menú se encuentran formas de crear una reserva, puede ser de manera manual o con un sistema de flujo de reserva que ayuda con un paso a paso.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-8(style="top: 19.2%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 8. 
+                italic-strong Retrieve/Modify 
+              p En este menú se hace la búsqueda de un código de reserva, de un tiquete electrónico, de un documento valor emitido por la aerolínea.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-9(style="top: 25.2%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 9. 
+                italic-strong Queue 
+              p Se utiliza para enviar información a la cola de verificación.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-10(style="top: 31.5%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 10. 
+                italic-strong Settings 
+              p En este menú se actualiza la contraseña.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-11(style="top: 37.5%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 11. 
+                italic-strong Calculate and Convert 
+              p En este menú se encuentran varias funciones complementarias que ayudan a tener información adicional como:
+              ul.mt-2.lista-ul--color.lista-check.mb-0
+                li.mb-0
+                  i.fas.fa-check
+                  | Convertidor de moneda.
+                li.mb-0
+                  i.fas.fa-check
+                  | Tarifas de exceso de equipaje.
+                li.mb-0
+                  i.fas.fa-check
+                  | Calculador de millas.
+                li.mb-0
+                  i.fas.fa-check
+                  | Información de impuestos.
+                li.mb-0
+                  i.fas.fa-check
+                  | Convertidor de hora (revisar hora local en otros países o ciudades).       
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-12(style="top: 43.5%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 12. 
+                italic-strong Tools 
+              p En este menú hay varias funciones complementarias para la labor diaria:
+              ul.mt-2.lista-ul--color.lista-check.mb-0
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Amadeus Information System: 
+                    | información del sistema.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Sales Report: 
+                    | revisar reporte de ventas.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Cryptic Window: 
+                    | pantalla de comandos.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Copy PNR: 
+                    | crear una copia de un PNR.   
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Flight Information:   
+                    | información operacional de un vuelo.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong E ticket and Invoice Report:   
+                    | reporte de tiquetes y facturas emitidas.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Flight Loading List:   
+                    | información detallada de un vuelo; sillas ocupadas, sillas vacías; pasajeros adultos, niños, etc.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Retrieve Passanger List:   
+                    | lista de pasajeros confirmados en el vuelo.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Corporative Profile:   
+                    | aplica para convenios corporativos y su información de viajes.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Scratch Pad:   
+                    | block de notas.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Timatic:   
+                    | herramienta utilizada para verificar documentación de viaje.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong Minimum Connecting Time:   
+                    | tiempos mínimos de conexión entre un vuelo y otro.
+                li.mb-0
+                  i.fas.fa-check
+                  p
+                    italic-strong PNR Recall:   
+                    | recordar un código de reserva. 
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-13(style="top: 49.5%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 13. 
+                italic-strong Links 
+              p Hace referencia a todos los links que pueda necesitar en la labor diaria, se anclan a este sistema para tener todo en la misma plataforma.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-14(style="top: 94.4%; left: 1.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 14. 
+                italic-strong Home 
+              p Pantalla principal donde se encuentran los menús de navegación en el sistema.                                               
+          
 
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
@@ -443,9 +633,109 @@
                       strong En conexión
                     td.text-center Vuelo con paradas intermedias con cambio de aeronave y # de vuelo.  
         
-        
-        
-        
+
+        .row.mb-5.justify-content-md-center
+          .container.col-lg-11.col-12
+            .lg-container
+              figure
+                img.lg-image(src="@/assets/curso/tema1-1-hotspot.jpg", alt="Información en el despliegue de una disponibilidad")
+              .lg-hotspot.lg-hotspot--2.lg-mobile2-1(style="top: 23%; left: 27%;")  
+                .lg-hotspot__button(@mouseover="mostrarIndicador = false")
+                  .indicador--click(v-if="mostrarIndicador")
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 1. AN20JUNBOGMIA
+                  p Repetición de la entrada.
+              .lg-hotspot.lg-hotspot--2.lg-mobile2-2(style="top: 26.5%; left: 41.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 2. MIA MIAMI USFL
+                  p Destino en código, nombre, código de país y de estado.   
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-3(style="top: 26.5%; left: 75%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 3. 4
+                  p Cantidad de días entre la fecha que se pide la disponibilidad y la fecha de viaje.
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-4(style="top: 26.5%; left: 76.4%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 4. SU
+                  p Día de la semana en inglés SU:SUNDAY:DOMINGO.
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-5(style="top: 26.5%; left: 78.6%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 5. 20JUN
+                  p Fecha de salida del vuelo.
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-6(style="top: 26.5%; left: 83.3%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 6. 0000
+                  p Hora de salida del vuelo, si no se especifica una hora el sistema automáticamente inicia la búsqueda desde las 00:00.
+              .lg-hotspot.lg-hotspot--2.lg-mobile2-7(style="top: 33.3%; left: 27.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 7. 1
+                  p Número de la línea.
+              .lg-hotspot.lg-hotspot--2.lg-mobile2-8(style="top: 33.3%; left: 30%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 8. AV006
+                  p Código de la aerolínea y número de vuelo.   
+              .lg-hotspot.lg-hotspot--2.lg-mobile2-9(style="top: 33.3%; left: 36.7%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 9. C4 J4 Y9 B9 M9 H9 Q9 V9
+                  p Clase de servicio y código de status o sillas disponibles. 
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-10(style="top: 33.3%; left: 53.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 10. BOG 1 MIA
+                  p Código del aeropuerto de salida y el número de la terminal del que sale el vuelo y código de la ciudad destino.        
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-11(style="top: 33.3%; left: 63%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 11. 0750
+                  p Hora de salida del vuelo (horario 24 horas). 
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-12(style="top: 33.3%; left: 69.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 12. 1235
+                  p Hora de llegada al destino (hora local).
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-13(style="top: 33.3%; left: 74.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 13. E0
+                  p 
+                    strong E: 
+                    | Tiquete electrónico.
+                    strong 0: 
+                    | Indicador de paradas.   
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-14(style="top: 33.3%; left: 76.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 14. 330
+                  p Código del equipo de aeronave que opera la ruta, en este caso AirBus330.
+              .lg-hotspot.lg-hotspot--1.lg-mobile2-15(style="top: 33.3%; left: 83.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 15. 3:45
+                  p Duración del vuelo.
+
+
         .row.justify-content-center.mb-4
           .col-lg-10.tarjeta-borde-morada.p-4
             p.text-center.mb-0 En la imagen anterior hay información en el despliegue de una disponibilidad: se solicita disponibilidad para el día 20 de junio en la ruta Bogotá – Miami.
@@ -784,7 +1074,182 @@
                       | PAX SS MAXIMA COLABORACION ADT MAYOR                  
              
     p.mb-4(data-aos="fade") Ejemplo de cómo se ve una reserva ya creada en Amadeus:
-                      
+
+    .row.mb-5.justify-content-md-center
+          .container.col-lg-11.col-12
+            .lg-container
+              figure
+                img.lg-image(src="@/assets/curso/tema1-1-hotspot2.jpg", alt="Ejemplo de cómo se ve una reserva ya creada en Amadeus")
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-1(style="top: 35%; left: 26%;")  
+                .lg-hotspot__button(@mouseover="mostrarIndicador = false")
+                  .indicador--click(v-if="mostrarIndicador")
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 1. RP/BOGXX0000/BOGXX0000
+                  p Código de la oficina u office ID donde se creó la reserva.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-2(style="top: 35%; left: 57.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 2. 0C/GS
+                  p Código de la firma o usuario que creó la reserva.  
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-3(style="top: 35%; left: 64%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 3. 16JUN21/2357Z
+                  p Fecha y hora en la que se creó la reserva, aparece con una Z al final de la hora, ya que es hora zulú, para la hora colombiana se resta 5 horas de este horario y esa es la hora que quedó realizada.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-4(style="top: 35%; left: 79.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 4. 36VM65
+                  p Código de reserva, récord localizador o PNR. 
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-5(style="top: 39.3%; left: 30%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 5. AVILA/CLAUDIA
+                  p Apellidos y nombres del pasajero.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-6(style="top: 43.3%; left: 30.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 6. AV8426
+                  p Aerolínea y número de vuelo del vuelo de ida.  
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-7(style="top: 43.3%; left: 37.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 7. S
+                  p Clase en la que se reservó el cupo.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-8(style="top: 43.3%; left: 39.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 8. 15JUL
+                  p Fecha de viaje del segmento de IDA.      
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-9(style="top: 43.3%; left: 44.7%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 9. 4
+                  p Día de la semana en número (jueves).        
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-10(style="top: 43.3%; left: 46.6%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 10. BOGMDE
+                  p Hace referencia a la ruta de ese trayecto, en este caso Bogotá-Medellín.             
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-11(style="top: 43.3%; left: 53%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 11. HK1
+                  p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-12(style="top: 43.3%; left: 65.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 12. 0500
+                  p Hora de salida del vuelo.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-13(style="top: 43.3%; left: 69.9%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 13. 0603
+                  p Hora de llegada del vuelo a destino (HORA LOCAL).        
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-14(style="top: 47.4%; left: 30.5%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 14. AV8435
+                  p Aerolínea y número de vuelo del vuelo de regreso.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-15(style="top: 47.4%; left: 37.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 15. S
+                  p Clase en la que se reservó el cupo.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-16(style="top: 47.4%; left: 39.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 16. 20JUL
+                  p Fecha de viaje del segmento de REGRESO.     
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-17(style="top: 47.4%; left: 44.7%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 17. 2
+                  p Día de la semana en número (martes).      
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-18(style="top: 47.4%; left: 46.6%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 18. MDEBOG
+                  p Hace referencia a la ruta de ese trayecto, en este caso Medellín-Bogotá.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-19(style="top: 47.4%; left: 53%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 19. HK1
+                  p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-20(style="top: 47.4%; left: 65.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 20. 0618
+                  p Hora de salida del vuelo.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-21(style="top: 47.4%; left: 69.9%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 21. 0710
+                  p Hora de llegada del vuelo a destino.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-22(style="top: 51.8%; left: 29.8%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 22. AP H8077894-H
+                  p Contacto de casa del pasajero.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-23(style="top: 55.9%; left: 32.8%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 23. 3123000001-M
+                  p Contacto móvil del pasajero.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-24(style="top: 60.1%; left: 29.8%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 24.TKOK16JUN/BOGXX0000//ETAV
+                  p Tiempo límite de la reserva, en este caso TKOK porque el cliente va a hacer la compra del tiquete.           
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-25(style="top: 64.4%; left: 29.8%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 25. SSR WCHR AV HK1/S2
+                  p Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta BOGMDE.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-26(style="top: 68.5%; left: 29.8%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 26. SSR WCHR AV HK1/S3
+                  p Servicio especial de Silla de Ruedas HK1: servicio confirmado, S2: para el segmento 2 de la reserva, es decir, la ruta MDEBOG.
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-27(style="top: 77.1%; left: 29.8%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 27. FE PAX /C1-2 NONREFUNDABLE/ CHANGESNOT PERMITTED /NO ENDORSE/S2-3
+                  p Endosos del tiquete con algunas restricciones de la tarifa C1-2: cupón 1-2 NO REFUNDABLE (no reembolsable) /CHANGESNOTPERMITED (cambios no permitidos)/ NOENDORSE (no endosable)
+              .lg-hotspot.lg-hotspot--2.lg-mobile3-28(style="top: 39.3%; left: 27.2%;")  
+                .lg-hotspot__button
+                .lg-hotspot__label.p-4
+                  h4 
+                    strong 28. 1-11
+                  p Líneas de información de la reserva.
+
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-9
         .tabla-a.color-acento-contenido
@@ -1299,6 +1764,7 @@ export default {
   },
   data: () => ({
     // variables de vue
+    mostrarIndicador: true,
     datosSlyder: [
       {
         texto: 'Ingresar su <b>firma</b> o su <b><i>USERNAME</b></i>. ',
@@ -1326,4 +1792,463 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+/* HOTSPOT */
+$buttonRadius: 20px;
+$labelBorderRadius: 1px
+$labelFade: 0.1s
+$colorButton: #FFB74D
+$colorButtonHover: #8C6DF2
+$colorText: #333
+
+
+.lg-image
+  display: block
+  height: 100%
+  width: 100%
+  object-fit: scale-down
+
+.lg-hotspot
+  position: absolute
+  margin: 0
+  padding: 0
+  transform: translate(-50%, -50%)
+  z-index: 0
+  &:hover,
+  &:active
+    cursor: pointer
+    .lg-hotspot__button
+      border-color: $colorButtonHover
+      background-color: rgba(216, 204, 255, 0.3)
+
+  &:hover
+    z-index: 999
+    .lg-hotspot__label
+      opacity: 1
+      background-color: #D8CCFF
+      border-radius: 10px
+
+  &__button
+    padding: 0px
+    border-radius: 5px
+    border: 2.5px solid $colorButton
+    background-color: rgba(255, 220, 114, 0.3)
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    z-index: 999
+    position: absolute
+
+
+  &__label
+    min-width: 270px
+    position: absolute
+    background-color: white
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    font-size: 14.5px
+    line-height: 1.45em
+    z-index: 999
+    pointer-events: none
+    border-radius: $labelBorderRadius
+    user-select: none
+    opacity: 0
+    transition: all $labelFade linear
+    p
+      margin: 0
+      color: $colorText
+      font-size: 14px
+      line-height: 18px
+  @media (max-width: 720px)
+    &__label
+      min-width: 200px
+    &__label p
+      text-align: center
+      padding: 4px
+    &__button
+      height: 12px
+      width: 12px
+      &:after
+        height: 9px
+        width: 9px
+        border: 2px solid white
+
+.lg-hotspot--1 .lg-hotspot__label
+  top: 26px
+  right: -30px
+.lg-hotspot--2 .lg-hotspot__label
+  top: 26px
+  left: 20px
+
+
+.lg-mobile1-1 .lg-hotspot__button
+  height: 24px
+  width: 77px
+.lg-mobile1-2 .lg-hotspot__button
+  height: 24px
+  width: 65px
+.lg-mobile1-3 .lg-hotspot__button
+  height: 24px
+  width: 43px
+.lg-mobile1-4 .lg-hotspot__button
+  height: 24px
+  width: 111px
+.lg-mobile1-5 .lg-hotspot__button
+  height: 24px
+  width: 12px
+.lg-mobile1-6 .lg-hotspot__button
+  height: 24px
+  width: 84px
+.lg-mobile1-7 .lg-hotspot__button
+  height: 24px
+  width: 67px
+.lg-mobile1-8 .lg-hotspot__button
+  height: 24px
+  width: 89px
+.lg-mobile1-9 .lg-hotspot__button
+  height: 24px
+  width: 42px
+.lg-mobile1-10 .lg-hotspot__button
+  height: 24px
+  width: 49px
+.lg-mobile1-11 .lg-hotspot__button
+  height: 24px
+  width: 118px
+.lg-mobile1-11 .lg-hotspot__label
+  min-width: 750px
+.lg-mobile1-12 .lg-hotspot__button
+  height: 24px
+  width: 35px
+.lg-mobile1-12 .lg-hotspot__label
+  min-width: 800px
+.lg-mobile1-13 .lg-hotspot__button
+  height: 24px
+  width: 37px
+.lg-mobile1-14 .lg-hotspot__button
+  height: 24px
+  width: 138px
+
+.lg-mobile2-1 .lg-hotspot__button
+  height: 16px
+  width: 90px
+.lg-mobile2-2 .lg-hotspot__button
+  height: 16px
+  width: 90px
+.lg-mobile2-3 .lg-hotspot__button
+  height: 16px
+  width: 12px
+.lg-mobile2-4 .lg-hotspot__button
+  height: 16px
+  width: 19px
+.lg-mobile2-5 .lg-hotspot__button
+  height: 16px
+  width: 39px
+.lg-mobile2-6 .lg-hotspot__button
+  height: 16px
+  width: 32px
+.lg-mobile2-7 .lg-hotspot__button
+  height: 16px
+  width: 17px
+.lg-mobile2-8 .lg-hotspot__button
+  height: 16px
+  width: 53px
+.lg-mobile2-9 .lg-hotspot__button
+  height: 16px
+  width: 132px
+.lg-mobile2-10 .lg-hotspot__button
+  height: 16px
+  width: 69px
+.lg-mobile2-11 .lg-hotspot__button
+  height: 16px
+  width: 37px
+.lg-mobile2-12 .lg-hotspot__button
+  height: 16px
+  width: 37px
+.lg-mobile2-13 .lg-hotspot__button
+  height: 16px
+  width: 18px
+.lg-mobile2-14 .lg-hotspot__button
+  height: 16px
+  width: 24px
+.lg-mobile2-15 .lg-hotspot__button
+  height: 16px
+  width: 38px
+
+
+.lg-mobile3-1 .lg-hotspot__button
+  height: 18px
+  width: 206px
+.lg-mobile3-2 .lg-hotspot__button
+  height: 18px
+  width: 57px
+.lg-mobile3-3 .lg-hotspot__button
+  height: 18px
+  width: 128px
+.lg-mobile3-4 .lg-hotspot__button
+  height: 18px
+  width: 60px
+.lg-mobile3-5 .lg-hotspot__button
+  height: 18px
+  width: 124px
+.lg-mobile3-6 .lg-hotspot__button
+  height: 18px
+  width: 64px
+.lg-mobile3-7 .lg-hotspot__button
+  height: 18px
+  width: 18px
+.lg-mobile3-8 .lg-hotspot__button
+  height: 18px
+  width: 52px
+.lg-mobile3-9 .lg-hotspot__button
+  height: 18px
+  width: 17px
+.lg-mobile3-10 .lg-hotspot__button
+  height: 18px
+  width: 61px
+.lg-mobile3-11 .lg-hotspot__button
+  height: 18px
+  width: 37px
+.lg-mobile3-12 .lg-hotspot__button
+  height: 18px
+  width: 44px
+.lg-mobile3-13 .lg-hotspot__button
+  height: 18px
+  width: 44px
+.lg-mobile3-14 .lg-hotspot__button
+  height: 18px
+  width: 64px
+.lg-mobile3-15 .lg-hotspot__button
+  height: 18px
+  width: 18px
+.lg-mobile3-16 .lg-hotspot__button
+  height: 18px
+  width: 52px
+.lg-mobile3-17 .lg-hotspot__button
+  height: 18px
+  width: 17px
+.lg-mobile3-18 .lg-hotspot__button
+  height: 18px
+  width: 61px
+.lg-mobile3-19 .lg-hotspot__button
+  height: 18px
+  width: 37px
+.lg-mobile3-20 .lg-hotspot__button
+  height: 18px
+  width: 44px
+.lg-mobile3-21 .lg-hotspot__button
+  height: 18px
+  width: 44px
+.lg-mobile3-22 .lg-hotspot__button
+  height: 18px
+  width: 127px
+.lg-mobile3-23 .lg-hotspot__button
+  height: 18px
+  width: 116px
+.lg-mobile3-24 .lg-hotspot__button
+  height: 18px
+  width: 244px
+.lg-mobile3-25 .lg-hotspot__button
+  height: 18px
+  width: 172px
+.lg-mobile3-26 .lg-hotspot__button
+  height: 18px
+  width: 172px
+.lg-mobile3-27 .lg-hotspot__button
+  height: 37px
+  width: 500px
+.lg-mobile3-28 .lg-hotspot__button
+  height: 224px
+  width: 23px
+
+
+
+/* Mobile */
+@media (max-width: 720px)
+
+  .lg-hotspot__button
+    border: 1.2px solid #FFB74D
+
+  .lg-hotspot--1 .lg-hotspot__label
+    top: 11px
+    right: -15px
+  .lg-hotspot--2 .lg-hotspot__label
+    top: 10px
+    left: 8px
+
+  .lg-mobile1-1
+    top: 6.5% !important
+    left: 17% !important
+    .lg-hotspot__button
+      height: 10px
+      width: 33px
+  .lg-mobile1-2
+    top: 6.5% !important
+    left: 50% !important
+    .lg-hotspot__button
+      height: 10px
+      width: 24px
+  .lg-mobile1-3
+    top: 6.5% !important
+    left: 79.5% !important
+    .lg-hotspot__button
+      height: 10px
+      width: 20px
+  .lg-mobile1-4
+    top: 6.5% !important
+    left: 85% !important
+    .lg-hotspot__button
+      height: 10px
+      width: 27px
+  .lg-mobile1-5
+    top: 6.5% !important
+    left: 93% !important
+    .lg-hotspot__button
+      height: 10px
+      width: 12px
+  .lg-mobile1-6
+    top: 6.5% !important
+    left: 4% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 29px
+  .lg-mobile1-7
+    top: 13% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 24px
+  .lg-mobile1-8
+    top: 18.2% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 9px
+      width: 32px
+  .lg-mobile1-9
+    top: 25% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 24px
+  .lg-mobile1-10
+    top: 31% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 24px
+  .lg-mobile1-11
+    top: 37% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 42px
+    .lg-hotspot__label
+      min-width: 300px
+  .lg-mobile1-12
+    top: 43% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 18px
+    .lg-hotspot__label
+      min-width: 300px
+  .lg-mobile1-13
+    top: 49.5% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 19px
+  .lg-mobile1-14
+    top: 94.5% !important
+    left: 3.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 33px
+
+  .lg-mobile2-1
+    top: 23% !important
+    left: 27% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 39px
+  .lg-mobile2-2
+    top: 26.5% !important
+    left: 41.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 40px
+  .lg-mobile2-3
+    top: 26.5% !important
+    left: 73.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 7px
+  .lg-mobile2-4
+    top: 26.5% !important
+    left: 75.2% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 8px
+  .lg-mobile2-5
+    top: 26.5% !important
+    left: 77.2% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 17px
+  .lg-mobile2-6
+    top: 26.5% !important
+    left: 82.1% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 12px
+  .lg-mobile2-7
+    top: 33.3% !important
+    left: 28% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 9px
+  .lg-mobile2-8
+    top: 33.3% !important
+    left: 31% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 21px
+  .lg-mobile2-9
+    top: 33.3% !important
+    left: 37.1% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 53px
+  .lg-mobile2-10
+    top: 33.3% !important
+    left: 53% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 28px
+  .lg-mobile2-11
+    top: 33.3% !important
+    left: 62.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 15px
+  .lg-mobile2-12
+    top: 33.3% !important
+    left: 68.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 15px
+  .lg-mobile2-13
+    top: 33.3% !important
+    left: 73% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 8px
+  .lg-mobile2-14
+    top: 33.3% !important
+    left: 75.2% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 10px
+  .lg-mobile2-15
+    top: 33.3% !important
+    left: 82% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 15px
+</style>

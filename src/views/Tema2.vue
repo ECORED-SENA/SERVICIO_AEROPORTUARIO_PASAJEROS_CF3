@@ -362,10 +362,12 @@
       .h2 2.2.  Interpretación de reglas tarifarias
 
     p(data-aos="fade") En el momento de desplegar las tarifas se deben revisar de acuerdo con la necesidad o gusto del pasajero la tarifa seleccionada y desplegar la información de la reglamentación de la misma, esto con el fin de informar al pasajero las restricciones que tiene la clase de servicio que está adquiriendo.
-    p.mb-4(data-aos="fade") Dentro de las reglas hay diferentes categorías, donde cada una tiene un código asignado para buscarla en el sistema y muestre la información correspondiente a la tarifa, como son:
+    p.mb-5(data-aos="fade") Dentro de las reglas hay diferentes categorías, donde cada una tiene un código asignado para buscarla en el sistema y muestre la información correspondiente a la tarifa, como son:
 
-
-
+    .row.justify-content-center.mb-5(data-aos="fade-up")
+      .col-lg-10
+        figure
+          img(src='@/assets/curso/tema2-2-pasos.svg', alt='Código asignado para categorías')
 
     .row.justify-content-center.mb-4(data-aos="fade-down")
       .col-lg-10
@@ -476,8 +478,120 @@
 
     p.mb-4(data-aos="fade") Ejemplo de cotización de un itinerario, solicitando al sistema que traiga la tarifa más baja disponible:
 
-
-
+    .row.mb-5.justify-content-md-center
+      .container.col-lg-11.col-12
+        .lg-container
+          figure
+            img.lg-image(src="@/assets/curso/tema2-3-hotspot.jpg", alt="Ejemplo de cotización de un itinerario")
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-1(style="top: 26%; left: 26.5%;")  
+            .lg-hotspot__button(@mouseover="mostrarIndicador = false")
+              .indicador--click(v-if="mostrarIndicador")
+            .lg-hotspot__label.p-4
+              h4 
+                strong 1. 01AVILA/CLAUDIA
+              p Nombre del pasajero.
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-2(style="top: 33%; left: 26.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 2. LAST TKT DTE 18JUN21/1551 IN POS
+              p Última fecha en la que se puede emitir el tiquete. 
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-3(style="top: 42.5%; left: 27%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 3. BOGMDEBOG 
+              p Ruta que va a realizar el pasajero.
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-4(style="top: 39.5%; left: 30%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 4. AV AV
+              p Aerolínea que opera los vuelos.
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-5(style="top: 39.5%; left: 32.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 5. 8426 8435 
+              p Números de vuelo en la ruta solicitada.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-6(style="top: 39.5%; left: 36.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 6. W W 
+              p Clase en la que se reservó cada vuelo.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-7(style="top: 39.5%; left: 40.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 7. 15JUL 20JUL 
+              p Primera fecha: viaje de ida segunda fecha: viaje de regreso.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-8(style="top: 39.5%; left: 45.1%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 8. 0500 0618 
+              p Primera hora: viaje de ida segunda hora: viaje de regreso.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-9(style="top: 39.5%; left: 49.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 9. WESB0BRQ WESB0BRQ 
+              p 
+                italic Fare basis 
+                | o base de tarifa, nombre de la tarifa.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-10(style="top: 39.5%; left: 61.2%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 10. NVB 15JUL 20JUL 
+              p 
+                italic NOT VALID BEFORE: 
+                | NO VÁLIDO ANTES,quiere decir que esta tarifa aplica solo por esas fechas puntualmente.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-11(style="top: 39.5%; left: 65.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 11. NVA 15JUL 20JUL
+              p 
+                italic NOT VALID AFTER: 
+                | NO VÁLIDO DESPUÉS, quiere decir que esta tarifa aplica solo por esas fechas puntualmente.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-12(style="top: 39.5%; left: 69.6%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 12. BG 0P 0P 
+              p Hace referencia a las piezas de equipaje que tiene permitida esta tarifa, en este caso no tiene piezas permitidas.
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-13(style="top: 56%; left: 26.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 13. COP 94000 
+              p Valor de la tarifa neta (valor neto sin impuestos).
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-14(style="top: 62.4%; left: 26.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 14.COP 4700YS COP 57500DU COP 35880 XT 
+              p.mb-0 Desglose de impuestos aplicables a este tiquete.  
+              p.mb-0 YS: IVA 5%. 
+              p.mb-0 XT: total de impuestos. 
+              p DU: Cargo administrativo. 
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-15(style="top: 73%; left: 26.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 15.COP 192080 
+              p Valor total (tarifa neta más impuestos)
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-16(style="top: 56%; left: 39.5%;")  
+            .lg-hotspot__button
+            .lg-hotspot__label.p-4
+              h4 
+                strong 16. 15JUL21BOG AV MDE Q16000.00 31000.00AV BOG Q16000.00 31000.00COP94000.00ENDXT COP 2880-DV COP 33000-CO
+              p.mb-0 Desglosa la información de la construcción de tarifa, sirve para saber la ruta completa, si tiene conexiones, si entran otras aerolíneas a participar, valor de tarifa por componente, la moneda que se maneja, y el valor total.
+              p.mb-0 Q combustible 
+              p.mb-0 CO Impuesto tasa aeroportuaria 
+              p COP Colombian Pesos   
 
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
@@ -810,6 +924,250 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+/* HOTSPOT */
+$buttonRadius: 20px;
+$labelBorderRadius: 1px
+$labelFade: 0.1s
+$colorButton: #FFB74D
+$colorButtonHover: #8C6DF2
+$colorText: #333
+
+
+.lg-image
+  display: block
+  height: 100%
+  width: 100%
+  object-fit: scale-down
+
+.lg-hotspot
+  position: absolute
+  margin: 0
+  padding: 0
+  transform: translate(-50%, -50%)
+  z-index: 0
+  &:hover,
+  &:active
+    cursor: pointer
+    .lg-hotspot__button
+      border-color: $colorButtonHover
+      background-color: rgba(216, 204, 255, 0.3)
+
+  &:hover
+    z-index: 999
+    .lg-hotspot__label
+      opacity: 1
+      background-color: #D8CCFF
+      border-radius: 10px
+
+  &__button
+    padding: 0px
+    border-radius: 5px
+    border: 2.5px solid $colorButton
+    background-color: rgba(255, 220, 114, 0.3)
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    z-index: 999
+    position: absolute
+
+  &__label
+    min-width: 300px
+    position: absolute
+    background-color: white
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+    font-size: 14.5px
+    line-height: 1.45em
+    z-index: 999
+    pointer-events: none
+    border-radius: $labelBorderRadius
+    user-select: none
+    opacity: 0
+    transition: all $labelFade linear
+    p
+      margin: 0
+      color: $colorText
+      font-size: 14px
+      line-height: 18px
+
+  @media (max-width: 720px)
+    &__label p
+      text-align: center
+      padding: 4px
+    &__button
+      height: 12px
+      width: 12px
+      &:after
+        height: 9px
+        width: 9px
+        border: 2px solid white
+
+.lg-hotspot--1 .lg-hotspot__label
+  top: 62px
+  right: -30px
+.lg-hotspot--2 .lg-hotspot__label
+  top: 62px
+  left: 20px
+
+
+.lg-mobile1-1 .lg-hotspot__button
+  height: 18px
+  width: 115px
+.lg-mobile1-2 .lg-hotspot__button
+  height: 18px
+  width: 270px
+.lg-mobile1-3 .lg-hotspot__button
+  height: 48px
+  width: 32px
+.lg-mobile1-4 .lg-hotspot__button
+  height: 61px
+  width: 24px
+.lg-mobile1-5 .lg-hotspot__button
+  height: 61px
+  width: 42px
+.lg-mobile1-6 .lg-hotspot__button
+  height: 61px
+  width: 25px
+.lg-mobile1-7 .lg-hotspot__button
+  height: 61px
+  width: 46px
+.lg-mobile1-8 .lg-hotspot__button
+  height: 61px
+  width: 39px
+.lg-mobile1-9 .lg-hotspot__button
+  height: 61px
+  width: 85px
+.lg-mobile1-10 .lg-hotspot__button
+  height: 61px
+  width: 45px
+.lg-mobile1-11 .lg-hotspot__button
+  height: 61px
+  width: 42px
+.lg-mobile1-12 .lg-hotspot__button
+  height: 61px
+  width: 28px
+.lg-mobile1-13 .lg-hotspot__button
+  height: 20px
+  width: 97px
+.lg-mobile1-14 .lg-hotspot__button
+  height: 48px
+  width: 119px
+.lg-mobile1-15 .lg-hotspot__button
+  height: 16px
+  width: 97px
+.lg-mobile1-16 .lg-hotspot__button
+  height: 48px
+  width: 321px
+
+
+/* Mobile */
+@media (max-width: 720px)
+
+  .lg-hotspot__button
+    border: 1.2px solid #FFB74D
+
+  .lg-hotspot--1 .lg-hotspot__label
+    top: 11px
+    right: -15px
+  .lg-hotspot--2 .lg-hotspot__label
+    top: 10px
+    left: 8px
+
+  .lg-mobile1-1
+    top: 25% !important
+    left: 27% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 41px
+  .lg-mobile1-2
+    top: 31.5% !important
+    left: 27% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 93px
+  .lg-mobile1-3
+    top: 41.5% !important
+    left: 27.5% !important
+    .lg-hotspot__button
+      height: 20px
+      width: 13px
+  .lg-mobile1-4
+    top: 37.5% !important
+    left: 31% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 8px
+  .lg-mobile1-5
+    top: 37.5% !important
+    left: 33% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 15px
+  .lg-mobile1-6
+    top: 37.5% !important
+    left: 37% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 9px
+  .lg-mobile1-7
+    top: 37.5% !important
+    left: 41% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 14px
+  .lg-mobile1-8
+    top: 37.5% !important
+    left: 44.6% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 14px
+  .lg-mobile1-9
+    top: 37.5% !important
+    left: 49.5% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 29px
+  .lg-mobile1-10
+    top: 37.5%  !important
+    left: 60.5% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 15px
+  .lg-mobile1-11
+    top: 37.5% !important
+    left: 64.5% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 15px
+  .lg-mobile1-12
+    top: 37.5% !important
+    left: 68.5% !important
+    .lg-hotspot__button
+      height: 25px
+      width: 10px
+  .lg-mobile1-13
+    top: 55% !important
+    left: 27.5% !important
+    .lg-hotspot__button
+      height: 8px
+      width: 34px
+  .lg-mobile1-14
+    top: 62.5% !important
+    left: 27.5% !important
+    .lg-hotspot__button
+      height: 17px
+      width: 41px
+  .lg-mobile1-15
+    top: 73% !important
+    left: 27.5% !important
+    .lg-hotspot__button
+      height: 6px
+      width: 35px
+  .lg-mobile1-16
+    top: 56% !important
+    left: 40% !important
+    .lg-hotspot__button
+      height: 18px
+      width: 108px
+
+/* HOVER */
 .nav-holder
   display: inline-block
   margin: 10px 5px
