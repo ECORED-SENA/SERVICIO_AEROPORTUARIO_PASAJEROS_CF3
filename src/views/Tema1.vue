@@ -208,27 +208,27 @@
                 li.mb-0
                   i.fas.fa-check
                   p
-                    italic-strong Corporative Profile:   
+                    italic-strong Corporative Profile: 
                     | aplica para convenios corporativos y su información de viajes.
                 li.mb-0
                   i.fas.fa-check
                   p
-                    italic-strong Scratch Pad:   
-                    | block de notas.
+                    italic-strong Scratch Pad: 
+                    |  block de notas.
                 li.mb-0
                   i.fas.fa-check
                   p
-                    italic-strong Timatic:   
+                    italic-strong Timatic: 
                     | herramienta utilizada para verificar documentación de viaje.
                 li.mb-0
                   i.fas.fa-check
                   p
-                    italic-strong Minimum Connecting Time:   
+                    italic-strong Minimum Connecting Time: 
                     | tiempos mínimos de conexión entre un vuelo y otro.
                 li.mb-0
                   i.fas.fa-check
                   p
-                    italic-strong PNR Recall:   
+                    italic-strong PNR Recall: 
                     | recordar un código de reserva. 
           .lg-hotspot.lg-hotspot--2.lg-mobile1-13(style="top: 49.5%; left: 1.2%;")  
             .lg-hotspot__button
@@ -974,15 +974,15 @@
 
     .row.mb-3
       .col-lg-8.mb-4(data-aos="fade-right")
-        .row.tarjeta-borde-naranja.p-4.mb-3
-          .col-lg-2
+        .row.tarjeta-borde-naranja.p-4.mb-3.justify-content-center
+          .col-lg-2.col-5.mb-3
             img(src="@/assets/curso/tema1-1-icono1.svg", alt="Arribo desconocido ARNK (Arrival Unknown)")
           .col-lg-10
             h5 Arribo desconocido ARNK (Arrival Unknown)
             p Este segmento indica que no se conoce la forma ni la fecha en que el pasajero se trasladó desde la ciudad de llegada del segmento previo hasta la ciudad de partida del segmento siguiente, podría ser que el pasajero se desplazó por sus propios medios auto, tren, bus, etc.
             p.mb-0 El ejemplo más común es cuando el pasajero toma un tiquete Bogotá-Miami/Orlando-Bogotá, en este ejemplo hay un ARNK ya que en la mayoría de los casos las personas alquilan coche para llegar de Miami a Orlando y tomar el vuelo de regreso.
-        .row.tarjeta-borde-naranja.p-4
-          .col-lg-2
+        .row.tarjeta-borde-naranja.p-4.justify-content-center
+          .col-lg-2.col-5.mb-3
             img(src="@/assets/curso/tema1-1-icono2.svg", alt="Arribo conocido")
           .col-lg-10
             h5 Arribo conocido
@@ -2273,4 +2273,173 @@ $colorText: #333
     .lg-hotspot__button
       height: 7px
       width: 15px
+
+  .lg-mobile3-1
+    top: 35% !important
+    left: 26.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 72px
+  .lg-mobile3-2
+    top: 35% !important
+    left: 56.7% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 20px
+  .lg-mobile3-3
+    top: 35% !important
+    left: 63.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 43px
+  .lg-mobile3-4
+    top: 35% !important
+    left: 77.2% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 25px
+  .lg-mobile3-5
+    top:  !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 43px
+  .lg-mobile3-6
+    top:  !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 24px
+  .lg-mobile3-7
+    top:  !important
+    left: 37.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 7px
+  .lg-mobile3-8
+    top:  !important
+    left: 39.4% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 19px
+  .lg-mobile3-9
+    top:  !important
+    left:  !important
+    .lg-hotspot__button
+      height: 7px
+      width: 7px
+  .lg-mobile3-10
+    top:  !important
+    left:  !important
+    .lg-hotspot__button
+      height: 7px
+      width: 21px
+  .lg-mobile3-11
+    top:  !important
+    left: 52.7% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 13px
+  .lg-mobile3-12
+    top:  !important
+    left: 64% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 17px
+  .lg-mobile3-13
+    top:  !important
+    left: 68.7% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 16px
+  .lg-mobile3-14
+    top:  !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 24px
+  .lg-mobile3-15
+    top:  !important
+    left: 37.5% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 7px
+  .lg-mobile3-16
+    top:  !important
+    left: 39.4% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 19px
+  .lg-mobile3-17
+    top:  !important
+    left:  !important
+    .lg-hotspot__button
+      height: 7px
+      width: 7px
+  .lg-mobile3-18
+    top:  !important
+    left:  !important
+    .lg-hotspot__button
+      height: 7px
+      width: 21px
+  .lg-mobile3-19
+    top:  !important
+    left: 52.7% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 13px
+  .lg-mobile3-20
+    top:  !important
+    left: 64% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 17px
+  .lg-mobile3-21
+    top:  !important
+    left: 68.7% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 16px
+  .lg-mobile3-22
+    top:  !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 44px
+  .lg-mobile3-23
+    top:  !important
+    left: 33.2% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 40px
+  .lg-mobile3-24
+    top:  !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 82px
+  .lg-mobile3-25
+    top:  !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 59px
+  .lg-mobile3-26
+    top:  !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 7px
+      width: 59px
+  .lg-mobile3-27
+    top: 77.1% !important
+    left: 30.8% !important
+    .lg-hotspot__button
+      height: 13px
+      width: 167px
+  .lg-mobile3-28
+    top: 39.3% !important
+    left: 28% !important
+    .lg-hotspot__button
+      height: 76px
+      width: 10px
 </style>

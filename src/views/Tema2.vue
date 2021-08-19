@@ -366,8 +366,284 @@
 
     .row.justify-content-center.mb-5(data-aos="fade-up")
       .col-lg-10
-        figure
-          img(src='@/assets/curso/tema2-2-pasos.svg', alt='Código asignado para categorías')
+        .pasos-a.color-acento-contenido
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.bottom
+                .pasos-a__circle  
+                  .h2.text-white AP
+              .col.py-3
+                .row
+                  h5 ADVANCE RES/TKTG
+                  p Tiempo anticipado de reserva y emisión del tiquete. El sistema nos informa si esta tarifa presentó una reserva con anterioridad y también si estimó el plazo para comprar el tiquete.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white BO
+              .col.py-3.text-end
+                .row
+                  h5 BLACKOUTS
+                  p Periodos de embargo. Esto quiere decir que son fechas dentro de las cuales la tarifa seleccionada no puede ser utilizada.      
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle  
+                  .h2.text-white CH
+              .col.py-3
+                .row
+                  h5 CHILD DISCOUNT
+                  p Corresponde al descuento para niños (CHD). Nos muestra la información si la tarifa tiene algún descuento a niños entre los 2 años y antes de cumplir los 12 años. También nos informa el descuento que se debe otorgar a los infantes (INF), es decir, a los niños desde un día hasta antes de los dos años. 
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white CO
+              .col.py-3.text-end
+                .row
+                  h5 COMBINABILITY
+                  p Combinabilidad. Esta nos indica si la tarifa se puede combinar con tarifa OW, o con mitades de tarifas RT.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle  
+                  .h2.text-white EL
+              .col.py-3
+                .row
+                  h5 ELIGIBILITY
+                  p Esta nos informa si la tarifa está dirigida a un tipo de público específico.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white FL
+              .col.py-3.text-end
+                .row
+                  h5 FLIGHT APLICATION
+                  p Esta opción nos informa si esta tarifa se puede utilizar en cualquier vuelo o solamente en vuelos determinados. 
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left      
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle  
+                  .h2.text-white MX
+              .col.py-3
+                .row
+                  h5 MAXIMUN STAY
+                  p Estadía máxima en destino. Es el plazo máximo de días o meses que un viajero se puede quedarse para utilizar la tarifa.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white MN
+              .col.py-3.text-end
+                .row
+                  h5 MINIMUN STAY
+                  p Estadía mínima en destino. Es el mínimo de días que el viajero puede permanecer en la ciudad de destino. 
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle  
+                  .h2.text-white OD
+              .col.py-3
+                .row
+                  h5 OTHER DISCOUNTS
+                  p Otros descuentos. Este va dirigido a distintos tipos de viajeros como son: personas de la tercera edad 
+                    italic (senior citizen), 
+                    | o jóvenes 
+                    italic (youth), 
+                    | etc.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white PE
+              .col.py-3.text-end
+                .row
+                  h5 PENALTIES
+                  p Penalidades. Se divide en dos categorías: la primera son penalidades a cobrar por concepto de reembolsos 
+                    italic (cancellation) 
+                    | y sus excepciones y la segunda categoría son las penalidades a cobrar por concepto de revisiones 
+                    italic (reissue) 
+                    | o revalidaciones 
+                    italic (revalidation) 
+                    | y sus excepciones, hay que tener en cuenta que algunas tarifas aplican descuentos para CHD y también se les debe aplicar la penalidad para 
+                    italic child.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle  
+                  .h2.text-white RU
+              .col.py-3
+                .row
+                  h5 RULE APPLICATION
+                  p Aplicación de las reglas. Se refiere a las reglas que se deben aplicar al tipo de tarifa, también a la clase de servicio (ejecutiva o turista).
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white SR
+              .col.py-3.text-end
+                .row
+                  h5 SALES RESTRICTION
+                  p Restricción de venta. Esta nos indica si la tarifa tiene alguna limitación para ser vendida en algún país o a través de algún medio de pago.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left      
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle  
+                  .h2.text-white SE
+              .col.py-3
+                .row
+                  h5 SEASONS
+                  p Temporadas. Esta opción nos indica en que temporadas altas, baja o sin temporada podemos utilizar esta tarifa o fechas específicas según lo establezca la empresa aérea.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white SO
+              .col.py-3.text-end
+                .row
+                  
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle  
+                  .h2.text-white SU
+              .col.py-3
+                .row
+                  h5 SURCHARGES
+                  p Sobrecosto. En esta podemos encontrar los valores adicionales a la tarifa que debemos sumar antes de aplicar los porcentajes de impuesto con IVA. Estos valores se aplican de acuerdo con la ruta como es el de combustible (Q).
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-right
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.left-bottom
+          .pasos-a__item
+            .row.align-items-center.d-flex.flex-row-reverse
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.full
+                .pasos-a__circle
+                  .h2.text-white TE
+              .col.py-3.text-end
+                .row
+                  h5 TICKET ENDORSEMENTES
+                  p Endosos. Nos informa si la tarifa puede ser autorizada para ser utilizada por otra empresa aérea o no.
+            .row.pasos-a__linea
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.right-bottom
+              .col-6.col-sm-8.col-lg-10
+                .hor-line
+              .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
+                .pasos-a__linea__esquina__linea.top-left      
+          .pasos-a__item
+            .row.align-items-center.d-flex
+              .col-3.col-sm-2.col-lg-1.pasos-a__numero.text-center.d-inline-flex.justify-content-center.align-items-center.top
+                .pasos-a__circle  
+                  .h2.text-white TR
+              .col.py-3
+                .row
+                  h5 TRAVEL RESTRICTIONS
+                  p Restricciones de viaje. Esta nos indica los días (fechas) y/o horas específicas en que se debe utilizar la tarifa.
+            
+
 
     .row.justify-content-center.mb-4(data-aos="fade-down")
       .col-lg-10
