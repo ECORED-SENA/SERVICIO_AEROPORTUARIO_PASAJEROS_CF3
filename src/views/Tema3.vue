@@ -78,8 +78,8 @@
 
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-10
-        .row.tarjeta-borde-naranja.p-4
-          .col-md-9
+        .row.justify-content-center.tarjeta-borde-naranja.p-4
+          .col-md-9.mb-4
             p Hay diferentes situaciones para que se solicite un reembolso de un boleto aéreo y estos pueden ser reembolsados total o parcialmente:
             ul.lista-ul--color.lista-circulo
               li.mb-0 
@@ -97,7 +97,7 @@
               li.mb-0
                 i.fas.fa-circle
                 | Pasajero privado de la libertad.         
-          .col-md-3
+          .col-md-3.col-9
             img.mb-0(src="@/assets/curso/tema3-1-img2.svg", alt="Imagen decorativa") 
 
     .row.justify-content-center.mb-5
@@ -123,7 +123,8 @@
                 | Radicar como: LEY DE RETRACTO COLOMBIA. 
               li.mb-0 
                 i.fas.fa-circle
-                | Deberá ser ejercido dentro de las 48 horas siguientes a la operación de compra. 
+                p.mb-0 Deberá ser ejercido 
+                  strong dentro de las 48 horas siguientes a la operación de compra. 
               li.mb-0 
                 i.fas.fa-circle
                 | Para vuelos nacionales, entre el momento de la solicitud de reembolso y la fecha de inicio de viaje debe haber como mínimo 8 días calendario contados a partir del día siguiente a la solicitud.    
@@ -208,7 +209,9 @@
                 | Se reembolsa el valor del segundo boleto emitido. 
               li.mb-0 
                 i.fas.fa-circle
-                | Si el cliente quiere que le reembolsen el primero entonces se maneja como reembolso voluntario (aplicando regla tarifaria). Excepción: cuando alguno de los boletos ya esté utilizado se reembolsará el boleto que esté sin uso.
+                p.mb-0 Si el cliente quiere que le reembolsen el primero entonces se maneja como reembolso voluntario (aplicando regla tarifaria). 
+                  strong Excepción: 
+                  | cuando alguno de los boletos ya esté utilizado se reembolsará el boleto que esté sin uso.
               li.mb-0 
                 i.fas.fa-circle
                 | Para boletos parcialmente utilizados, el cálculo de la porción usada se realizará mediante prorrateo directo.  

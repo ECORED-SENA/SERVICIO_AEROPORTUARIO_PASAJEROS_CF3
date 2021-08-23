@@ -263,7 +263,7 @@
           .video
             iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
-    h5.mb-4(data-aos="fade-right") Rutas aéreas: las tarifas varían según la ruta aérea utilizada y de acuerdo con el trayecto elegid
+    h5.mb-4(data-aos="fade-right") Rutas aéreas: las tarifas varían según la ruta aérea utilizada y de acuerdo con el trayecto elegido
     .row.justify-content-center.mb-5(data-aos="fade-down")
       .col-lg-10.tarjeta-borde-naranja.p-4
         .row.align-items-center
@@ -593,7 +593,8 @@
                   .h2.text-white SO
               .col.py-3.text-end
                 .row
-                  
+                  h5 STOPOVERS
+                  p Paradas. Es la que nos indica si la tarifa que se está vendiendo permite una parada o varias con estancia en alguna ciudad intermedia entre ciudad de origen y ciudad de destino. También nos muestra si estas paradas tienen algún costo o son gratuitas.
             .row.pasos-a__linea
               .col-3.col-sm-2.col-lg-1.pasos-a__linea__esquina
                 .pasos-a__linea__esquina__linea.right-bottom
@@ -769,7 +770,7 @@
               h4 
                 strong 1. 01AVILA/CLAUDIA
               p Nombre del pasajero.
-          .lg-hotspot.lg-hotspot--1.lg-mobile1-2(style="top: 33%; left: 26.5%;")  
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-2(style="top: 33%; left: 26.5%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -781,13 +782,13 @@
               h4 
                 strong 3. BOGMDEBOG 
               p Ruta que va a realizar el pasajero.
-          .lg-hotspot.lg-hotspot--1.lg-mobile1-4(style="top: 39.5%; left: 30%;")  
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-4(style="top: 39.5%; left: 30%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 4. AV AV
               p Aerolínea que opera los vuelos.
-          .lg-hotspot.lg-hotspot--1.lg-mobile1-5(style="top: 39.5%; left: 32.5%;")  
+          .lg-hotspot.lg-hotspot--2.lg-mobile1-5(style="top: 39.5%; left: 32.5%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -819,7 +820,7 @@
               p 
                 italic Fare basis 
                 | o base de tarifa, nombre de la tarifa.
-          .lg-hotspot.lg-hotspot--2.lg-mobile1-10(style="top: 39.5%; left: 61.2%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-10(style="top: 39.5%; left: 61.2%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -827,7 +828,7 @@
               p 
                 italic NOT VALID BEFORE: 
                 | NO VÁLIDO ANTES,quiere decir que esta tarifa aplica solo por esas fechas puntualmente.
-          .lg-hotspot.lg-hotspot--2.lg-mobile1-11(style="top: 39.5%; left: 65.5%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-11(style="top: 39.5%; left: 65.5%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -835,7 +836,7 @@
               p 
                 italic NOT VALID AFTER: 
                 | NO VÁLIDO DESPUÉS, quiere decir que esta tarifa aplica solo por esas fechas puntualmente.
-          .lg-hotspot.lg-hotspot--2.lg-mobile1-12(style="top: 39.5%; left: 69.6%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile1-12(style="top: 39.5%; left: 69.6%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -1009,7 +1010,7 @@
         .row.align-items-center
           .col-md-8.mb-4.mb-lg-0.px-lg-4
             h4.mb-4 Billete aéreo
-            p.mb-0 En la industria aeronáutica participan varios documentos en el proceso de viaje, iniciando por la emisión del billete o pasaje aéreo, luego en el proceso de registro de pasajeros y de equipaje donde se obtiene el pasabordo, las etiquetas de equipaje y demás. Para iniciar el proceso se debe tener en cuenta el área comercial y los documentos que en este momento se generan, como el billete aéreo.
+            p.mb-0 Documento contrato de servicio de transporte entre la compañía aérea y el pasajero y también se toma como recibo de pago como documento contable que trae una serie de datos de itinerario para las aerolíneas involucradas, que se ajustan a los códigos internacionales de transporte aéreo.
           .col-md-4
             img(src="@/assets/curso/tema2-4-img1.svg", alt="Imagen decorativa")
 
@@ -1355,6 +1356,16 @@ $colorText: #333
 /* Mobile */
 @media (max-width: 720px)
 
+  .container.lg-hotspot4
+    width: 345px
+  .lg-hotspot4 .lg-image
+    width: 320px
+  .lg-container.lg-hotspot4
+    width: 320px
+
+  .lg-hotspot__label
+    min-width: 200px
+
   .lg-hotspot__button
     border: 1.2px solid #FFB74D
 
@@ -1362,8 +1373,8 @@ $colorText: #333
     top: 11px
     right: -15px
   .lg-hotspot--2 .lg-hotspot__label
-    top: 10px
-    left: 8px
+    top: 12px
+    left: -65px
 
   .lg-mobile1-1
     top: 25% !important
@@ -1547,9 +1558,13 @@ $colorText: #333
 
 @media (max-width: $bp-max-md)
   .nav-holder
-    height: 410px
+    height: 270px
   .nav-holder img
     height: 100%
     object-fit: cover
-    object-position: center center
+    object-position: left center
+  .nav-holder:hover:before
+    border-bottom-left-radius: 16px
+    border-bottom-right-radius: 0px
+    border-top-right-radius: 0px
 </style>

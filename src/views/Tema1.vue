@@ -972,6 +972,8 @@
       .col-lg-8.tarjeta-borde-morada.p-4
         p.text-center.mb-0 En la imagen anterior se observa que en la ruta Bogotá – Medellín – Bogotá, el estatus de los cupos es HK, es decir, confirmado, en este ejemplo está HK1 porque la reserva es solo para 1 persona, Claudia Ávila, sin embargo, si fueran más, este número variará según el número de pasajeros. 
 
+    p.mb-4(data-aos="fade") En algunos casos puntuales es necesario utilizar segmentos informativos tales como:
+
     .row.mb-3
       .col-lg-8.mb-4(data-aos="fade-right")
         .row.tarjeta-borde-naranja.p-4.mb-3.justify-content-center
@@ -1087,25 +1089,25 @@
               h4 
                 strong 1. RP/BOGXX0000/BOGXX0000
               p Código de la oficina u office ID donde se creó la reserva.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-2(style="top: 35%; left: 57.5%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-2(style="top: 35%; left: 57.5%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 2. 0C/GS
               p Código de la firma o usuario que creó la reserva.  
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-3(style="top: 35%; left: 64%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-3(style="top: 35%; left: 64%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 3. 16JUN21/2357Z
               p Fecha y hora en la que se creó la reserva, aparece con una Z al final de la hora, ya que es hora zulú, para la hora colombiana se resta 5 horas de este horario y esa es la hora que quedó realizada.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-4(style="top: 35%; left: 79.2%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-4(style="top: 35%; left: 79.2%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 4. 36VM65
               p Código de reserva, récord localizador o PNR. 
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-5(style="top: 39.3%; left: 30%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-5(style="top: 39.3%; left: 30%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -1141,19 +1143,19 @@
               h4 
                 strong 10. BOGMDE
               p Hace referencia a la ruta de ese trayecto, en este caso Bogotá-Medellín.             
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-11(style="top: 43.3%; left: 53%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-11(style="top: 43.3%; left: 53%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 11. HK1
               p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-12(style="top: 43.3%; left: 65.2%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-12(style="top: 43.3%; left: 65.2%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 12. 0500
               p Hora de salida del vuelo.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-13(style="top: 43.3%; left: 69.9%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-13(style="top: 43.3%; left: 69.9%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -1189,25 +1191,25 @@
               h4 
                 strong 18. MDEBOG
               p Hace referencia a la ruta de ese trayecto, en este caso Medellín-Bogotá.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-19(style="top: 47.4%; left: 53%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-19(style="top: 47.4%; left: 53%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 19. HK1
               p Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-20(style="top: 47.4%; left: 65.2%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-20(style="top: 47.4%; left: 65.2%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 20. 0618
               p Hora de salida del vuelo.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-21(style="top: 47.4%; left: 69.9%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-21(style="top: 47.4%; left: 69.9%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
                 strong 21. 0710
               p Hora de llegada del vuelo a destino.
-          .lg-hotspot.lg-hotspot--2.lg-mobile3-22(style="top: 51.8%; left: 29.8%;")  
+          .lg-hotspot.lg-hotspot--1.lg-mobile3-22(style="top: 51.8%; left: 29.8%;")  
             .lg-hotspot__button
             .lg-hotspot__label.p-4
               h4 
@@ -1336,7 +1338,7 @@
               tr
                 td
                   strong 19. HK1
-                td Hace referencia a la ruta de ese trayecto, en este caso Medellín-Bogotá.
+                td Es el estatus del cupo en el vuelo, en este caso confirma 1 cupo.
               tr
                 td
                   strong 20. 0618
@@ -2083,6 +2085,26 @@ $colorText: #333
     width: 955px
 /* MOBILE */
 @media (max-width: 720px)
+
+  .container.lg-hotspot1
+    width: 345px
+  .lg-hotspot1 .lg-image
+    width: 320px
+  .lg-container.lg-hotspot1
+    width: 320px
+  .container.lg-hotspot2
+    width: 345px
+  .lg-hotspot2 .lg-image
+    width: 320px
+  .lg-container.lg-hotspot2
+    width: 320px
+  .container.lg-hotspot3
+    width: 345px
+  .lg-hotspot3 .lg-image
+    width: 320px
+  .lg-container.lg-hotspot3
+    width: 320px
+
 
   .lg-hotspot__button
     border: 1.2px solid #FFB74D
