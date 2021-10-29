@@ -303,20 +303,61 @@ export default {
           'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
       },
       {
-        nombre: ' ',
+        nombre: 'Zuleidy Maria Ruiz Torres',
+        cargo: 'Producción audiovisual',
+        centro: 'Centro de Comercio y Servicios <br>Regional Tolima',
+      },
+      {
+        nombre: 'Wilson Andrés Arenales Caceres',
         cargo: 'Producción audiovisual',
         centro:
           'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
       },
       {
-        nombre: 'Andres Mauricio Santaella Ochoa',
-        cargo: 'Soporte front-end',
+        nombre: 'Gilberto Junior Rodriguez Rodriguez',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
+      },
+      {
+        nombre: 'Víctor Raúl Cárdenas Cáceres',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
+      },
+      {
+        nombre: 'John Jairo Arciniegas González',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
+      },
+      {
+        nombre: 'Camilo Villamizar Lizcano',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
+      },
+      {
+        nombre: 'María Carolina Tamayo López',
+        cargo: 'Producción audiovisual',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
+      },
+      {
+        nombre: 'Adriana Marcela Suárez Eljure',
+        cargo: 'Producción audiovisual',
         centro:
           'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
       },
       {
         nombre: 'Andrea Paola Botello De la Rosa',
         cargo: 'Desarrollo front-end',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
+      },
+      {
+        nombre: 'Andres Mauricio Santaella Ochoa',
+        cargo: 'Soporte front-end',
         centro:
           'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
       },

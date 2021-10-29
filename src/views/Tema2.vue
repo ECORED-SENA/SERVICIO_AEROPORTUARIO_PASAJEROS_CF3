@@ -657,7 +657,7 @@
       .col-lg-10
         figure.mb-5
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/PCOm4HG-QPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         //-.tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
@@ -974,7 +974,7 @@
       .col-lg-10
         figure
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/Y_ommiCsPCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         //- .tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
@@ -1053,29 +1053,14 @@
       .col-lg-10
         figure.mb-4
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-        //-.tarjeta.color-degrade.p-3
-          .row.justify-content-around.align-items-center
-            .col-1
-            .col-3.col-sm-3.col-lg-2
-              img.px-lg-3(src="@/assets/curso/tema2-4-cta2.svg")
-            .col
-              .row.justify-content-between.align-items-center
-                .col.mb-3.mb-sm-0
-                  h3.mb-1 Video inicio - Emisión
-                  p.text-small.mb-0 A manera de explicación sobre la plataforma Amadeus, se 
-                    br
-                    | presenta el siguiente video; se recomienda su descarga.
-                .col-sm-auto.px-lg-4
-                  a.boton.color-acento-botones.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
-                    span Descargar
-                    i.fas.fa-file-download                
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/RK9sJ8vYv9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        
 
     .row.justify-content-center(data-aos="fade-down")
       .col-lg-10
         figure
           .video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/h4zlORi_MSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
         //- .tarjeta.color-degrade.p-3
           .row.justify-content-around.align-items-center
             .col-1
