@@ -176,6 +176,7 @@ export default {
     },
     {
       termino: 'Involuntary Rerouting',
+      termHTML: '<i>Involuntary Rerouting</i>',
       significado:
         'cambio de ruta involuntario (requiere revisado) solamente del (los) cupón (es) involucrado(s) por cambio de itinerario ocasionado por la línea aérea. ',
     },
@@ -186,26 +187,31 @@ export default {
     },
     {
       termino: 'Reissue',
+      termHTML: '<i>Reissue</i>',
       significado:
         'reemisión, ocasionada por cambio de ruta o por cambio de clase. ',
     },
     {
       termino: 'Residual value',
+      termHTML: '<i>Residual value</i>',
       significado:
         'cantidad de dinero que queda al cliente después de un revisado. ',
     },
     {
       termino: 'Revalidation',
+      termHTML: '<i>Revalidation</i>',
       significado:
         'revalidación, cambio de fecha o vuelo dentro de la validez de la tarifa en la misma clase.',
     },
     {
       termino: 'Schedule Change',
+      termHTML: '<i>Schedule Change</i>',
       significado:
         'cambio al itinerario efectuado por la aerolínea por razones operativas.',
     },
     {
       termino: 'Service Charge',
+      termHTML: '<i>Service Charge</i>',
       significado: 'cargo por el servicio.',
     },
     {
@@ -215,6 +221,7 @@ export default {
     },
     {
       termino: 'Upgrade',
+      termHTML: '<i>Upgrade</i>',
       significado: 'ascenso (cambio de cabina o tarifa).',
     },
     {
@@ -229,6 +236,7 @@ export default {
     },
     {
       termino: 'Waived',
+      termHTML: '<i>Waived</i>',
       significado: 'exento (de una multa o restricción por una situación).',
     },
   ],

@@ -19,7 +19,7 @@
         .row.justify-content-center
           .col-md-5.mb-4.mb-md-0
             h5 Cambios voluntarios
-            p Cambios voluntarios de boletos aéreos son todos aquellos que realiza el cliente, como se realiza a continuación:
+            p Cambios voluntarios de boletos aéreos son todos aquellos que realiza el cliente, como se observa a continuación:
             ul.lista-ul--color.lista-circulo
               li.mb-0 
                 i.fas.fa-circle
@@ -136,7 +136,7 @@
                 | Adjuntar documentos de soporte que demuestren que se trata de una compra a distancia o no tradicional (por ejemplo: pantallazo de PSE, pantallazo de transferencia electrónica, etc.). 
               li.mb-0 
                 i.fas.fa-circle
-                | La aerolínea retendrá el menor valor entre: (i) el 10% del valor de la tarifa más el Q de combustible y un valor que la compañía asigne por reembolso en vuelos nacionales y en vuelos internacionales aplicando la TRM correspondiente al día en que se realizó la solicitud. 
+                | La aerolínea retendrá el menor valor entre: (i) el 10 % del valor de la tarifa más el Q de combustible y un valor que la compañía asigne por reembolso en vuelos nacionales y en vuelos internacionales aplicando la TRM correspondiente al día en que se realizó la solicitud. 
               li.mb-0 
                 i.fas.fa-circle
                 | Aplica para formas de pago tarjeta de crédito y tarjeta débito.      
@@ -152,7 +152,7 @@
                 | Aplica para todas las formas de pago.
               li.mb-0 
                 i.fas.fa-circle
-                | El valor para retener no podrá superar el 10% del valor de la tarifa (tarifa + Q Combustible).
+                | El valor para retener no podrá superar el 10 % del valor de la tarifa (tarifa + Q Combustible).
               li.mb-0 
                 i.fas.fa-circle
                 | Para tarifas promocionales aplicará lo establecido en la regla tarifaria. 

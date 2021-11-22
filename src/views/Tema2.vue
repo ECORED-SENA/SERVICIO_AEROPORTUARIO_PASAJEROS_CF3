@@ -1172,11 +1172,11 @@
           div.p-lg-4.py-5
             figure.mb-4
               img(src='@/assets/curso/tema2-6-slider1.jpg', alt='información de la oficina')
-            p.mb-0 En recuadro está la información de la oficina de la cual se está revisando el reporte de ventas y qué fecha se solicita al sistema que permita ver el reporte de ventas.  
+            p.mb-0 En el recuadro está la información de la oficina de la cual se está revisando el reporte de ventas y qué fecha se solicita al sistema que permita ver el reporte de ventas.  
           div.p-lg-4
             figure.mb-4
               img(src='@/assets/curso/tema2-6-slider2.jpg', alt='detalle de cada tiquete emitido')
-            p.mb-0 En recuadro se encuentra el detalle de cada tiquete emitido (# de tiquete, total pago, tarifa neta, impuestos, nombre del pasajero, código de reserva, firma o identificación del agente quien emitió el documento).   
+            p.mb-0 En el recuadro se encuentra el detalle de cada tiquete emitido (# de tiquete, total pago, tarifa neta, impuestos, nombre del pasajero, código de reserva, firma o identificación del agente quien emitió el documento).   
 
 </template>
 
